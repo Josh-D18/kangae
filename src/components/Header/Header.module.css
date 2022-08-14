@@ -1,0 +1,13 @@
+.links-container {
+  @apply sm:hidden md:flex flex-row;
+}
+
+.links {
+  @apply font-[500] not-italic text-[20px] leading-[42px] text-center tracking-[4.82px] my-5 w-[150px] h-[47px] text-primary-500 font-primary;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.links:hover {
+  @apply font-[400];
+  transform: translateY(0) scale(1.2);
+}
