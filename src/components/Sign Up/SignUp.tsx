@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Input from "./ui/Input/Input";
+import styles from "./SignUp.module.css";
 
 type initalState = {
   username: string;
   password: string;
-  error: boolean;
+  usernameError: boolean;
+  passwordError: boolean;
 };
 
 const SignUp = () => {
   const [signupInput, setSignUpInput] = useState<initalState>({
     username: "",
     password: "",
-    error: false,
+    usernameError: false,
+    passwordError: false,
   });
 
   const handleChange = (e: any) => {
@@ -20,15 +23,20 @@ const SignUp = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    if (signupInput.username === "") {
-      setSignUpInput({ ...signupInput, error: true });
-      console.log("ERROR");
+
+    if (signupInput.username.length < 3 && signupInput.password.length < 5) {
+      setSignUpInput({
+        ...signupInput,
+        usernameError: true,
+        passwordError: true,
+      });
     }
 
-    if (signupInput.password === "") {
-      setSignUpInput({ ...signupInput, error: true });
-      console.log("ERROR");
-    }
+    //   setSignUpInput({
+    //     ...signupInput,
+    //     usernameError: false,
+    //     passwordError: false,
+    //   });
   };
 
   return (
@@ -45,7 +53,7 @@ const SignUp = () => {
         name="username"
         label="User Name"
         handleChange={handleChange}
-        error={signupInput.error}
+        error={signupInput.usernameError}
       />
       <Input
         placeholder="Password"
@@ -53,9 +61,9 @@ const SignUp = () => {
         name="password"
         label="Password"
         handleChange={handleChange}
-        error={signupInput.error}
+        error={signupInput.passwordError}
       />
-      <input type="submit" placeholder="Submit"></input>
+      <input type="submit" placeholder="Submit" className={styles["button"]} />
     </form>
   );
 };

@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import styles from "./Input.module.css";
 
 interface IInput {
@@ -24,8 +25,9 @@ const Input = (props: IInput) => {
         placeholder={placeholder}
         name={name}
         id={id}
-        className={styles["input"]}
+        className={clsx(styles["input"], error && "border-error")}
         onChange={(e) => handleChange(e)}
+        type={name}
       />
       {error && (
         <p className="font-[500] not-italic text-error font-primary py-3">
