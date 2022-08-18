@@ -1,0 +1,9 @@
+.input {
+  @apply h-[56px]  rounded-[8px] bg-primary-200 py-3 w-[70%] lg:w-[90%] xl:w-[100%];
+  padding: 1rem;
+  border: 2px solid #423a3a;
+}
+
+.input:focus {
+  border: 2px solid #423a3a;
+}

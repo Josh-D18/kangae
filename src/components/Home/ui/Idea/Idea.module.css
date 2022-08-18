@@ -1,5 +1,26 @@
 .container {
-  @apply w-[322px] flex flex-col m-auto py-10;
+  @apply w-[322px] flex flex-col m-auto py-10 h-full;
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply rounded-sm my-7 w-[380px];
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: 3px solid;
+    border-color: #423a3a;
+    border-radius: 10px;
+  }
+
+  .container:hover {
+    border-color: #ce9898;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    @apply xl:w-[600px];
+  }
 }
 
 .icon-container {
@@ -15,7 +36,7 @@
 }
 
 .idea-title {
-  @apply text-[16px] font-primary text-[#800080] font-[500] capitalize pr-[16px] whitespace-nowrap;
+  @apply text-[16px] font-primary text-primary-500 font-[500] capitalize pr-[16px] whitespace-nowrap;
 }
 
 .idea-category {

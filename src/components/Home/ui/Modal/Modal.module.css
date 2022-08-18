@@ -1,0 +1,27 @@
+.container {
+  @apply absolute top-0 left-0 right-0 w-full m-auto bg-primary-200 h-full rounded-md;
+}
+
+.content-container {
+  @apply flex flex-col items-center h-full justify-center;
+}
+
+.idea-title {
+  @apply text-[25px] font-primary text-[#800080] font-[500] capitalize pr-[16px] tracking-[1px] py-6;
+}
+
+.idea-description-container {
+  @apply p-[16px] px-[25px];
+}
+
+.idea-description {
+  @apply text-[17px] font-primary text-primary-500 font-[500] capitalize leading-[25px] tracking-[1px];
+}
+
+.idea-info-container {
+  @apply flex justify-evenly w-full my-7;
+}
+
+.button-container {
+  @apply flex w-full justify-evenly my-7;
+}

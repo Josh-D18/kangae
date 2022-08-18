@@ -1,3 +1,36 @@
 .container {
   @apply w-full bg-primary-200 h-full;
+  height: calc(100% - 150px);
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: calc(100% - 100px);
+  }
+}
+
+.option-button {
+}
+
+.sortByText {
+  @apply text-[15px] font-primary text-primary-500 font-[500] capitalize pr-[16px] whitespace-nowrap px-3 transition-all duration-500;
+}
+
+.home-content-container {
+  @apply h-[100%] overflow-y-auto scroll-smooth;
+}
+
+.home-content-container::-webkit-scrollbar {
+  display: none;
+}
+
+.home-content-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.home-create-idea-option-button {
+  @apply h-[48px] rounded-[28px] mr-5 items-center justify-center text-primary-200 hover:ease-in hover:brightness-[98%] md:w-[50px] font-primary flex my-7;
+  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
 }

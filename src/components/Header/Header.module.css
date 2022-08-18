@@ -1,5 +1,5 @@
 .links-container {
-  @apply sm:hidden md:flex flex-row;
+  @apply sm:hidden md:flex flex-row md:pb-5;
 }
 
 .links {
