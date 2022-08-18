@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import styles from "./Dropdown.module.css";
-import closeIcon from "../../../../assets/icons/closeIcon.png";
+import closeIcon from "../../../../assets/icons/close-icon.png";
 import { Link } from "react-router-dom";
 
 interface IDropDown {
@@ -40,10 +40,18 @@ const DropDown = (props: IDropDown) => {
           </div>
           <div className={styles["container-content"]}>
             <ul className={styles["links-container"]}>
-              <Link to="#" className={styles["links"]}>
+              <Link
+                to="/signin"
+                className={styles["links"]}
+                onClick={() => setIsOpen(false)}
+              >
                 Sign In
               </Link>
-              <Link to="#" className={styles["links"]}>
+              <Link
+                to="/signup"
+                className={styles["links"]}
+                onClick={() => setIsOpen(false)}
+              >
                 Sign Up
               </Link>
             </ul>

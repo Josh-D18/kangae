@@ -1,5 +1,5 @@
 import Input from "./ui/Input/Input";
-import styles from "./SignUp.module.css";
+import styles from "./SignIn.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
@@ -7,7 +7,7 @@ type Inputs = {
   password: string;
 };
 
-const SignUp = () => {
+const SignIn = () => {
   const {
     register,
     handleSubmit,
@@ -17,11 +17,11 @@ const SignUp = () => {
 
   return (
     <form
-      className="flex flex-col items-center justify-center w-full h-[95%] bg-secondary-200"
+      className="flex flex-col items-center justify-center w-full h-full bg-secondary-200"
       onSubmit={handleSubmit(onSubmit)}
     >
       <div className="font-[500] not-italic text-[40px] leading-[42px] text-center tracking-[4.82px] my-3 w-[311px] h-[42px] text-primary-500 font-primary">
-        Sign Up
+        Sign In
       </div>
 
       <Input
@@ -50,4 +50,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;

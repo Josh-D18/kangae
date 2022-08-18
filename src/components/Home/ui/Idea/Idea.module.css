@@ -1,0 +1,31 @@
+.container {
+  @apply w-[322px] flex flex-col m-auto py-10;
+}
+
+.icon-container {
+  @apply flex items-center w-full justify-start;
+}
+
+.icon {
+  @apply w-[50px] h-auto object-contain;
+}
+
+.idea-text-container {
+  @apply ml-[3px] flex w-full items-center;
+}
+
+.idea-title {
+  @apply text-[16px] font-primary text-[#800080] font-[500] capitalize pr-[16px] whitespace-nowrap;
+}
+
+.idea-category {
+  @apply text-[15px] font-primary text-primary-500 font-[600] capitalize;
+}
+
+.idea-description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 250px;
+  display: block;
+  overflow: hidden;
+}

@@ -33,13 +33,14 @@ const Input = (props: IInput) => {
           minLength: 4,
         })}
       />
+      {/* Intergrate with the backend */}
       <div className="relative">
         {errors[`${name}`]?.type === "required" && (
           <p className="font-[500] not-italic text-error font-primary py-3 absolute capitalize whitespace-nowrap">
             {errors[`${name}`].message}
           </p>
         )}
-        {errors[`${name}`]?.type === "maxLength" && (
+        {/* {errors[`${name}`]?.type === "maxLength" && (
           <p className="font-[500] not-italic text-error font-primary py-3 absolute capitalize whitespace-nowrap">
             {`${name} must be no greater than 10 characters`}
           </p>
@@ -48,8 +49,7 @@ const Input = (props: IInput) => {
           <p className="font-[500] not-italic text-error font-primary py-3 absolute capitalize whitespace-nowrap">
             {`${name} must be greater than 5 characters`}
           </p>
-        )}
-        {/* Backend Intergration With Username */}
+        )} */}
       </div>
     </div>
   );

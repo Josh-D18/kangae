@@ -20,9 +20,9 @@ const Header = () => {
           alt="model"
           className="w-[50px] h-[50px] ml-[1.5rem] md:w-[70px] md:h-[70px] md:mt-2"
         />
-        <p className="text-primary-400 font-primary font-[700] ml-[1rem] md:text-[30px] md:font-[500] md:mt-2">
+        <h1 className="text-primary-500 font-primary font-[700] ml-[1rem] md:text-[30px] md:font-[500] md:mt-2 self-center">
           Kangae
-        </p>
+        </h1>
       </div>
 
       <div className="md:m-2 md:mr-5 m-[0.8rem] mr-[1.05rem] md:mt-[2rem]">
@@ -36,12 +36,12 @@ const Header = () => {
           <DropDown isOpen={openModal} setIsOpen={setOpenModal} />
         </div>
         <ul className={styles["links-container"]}>
-          <Link to="#" className={styles["links"]}>
-            Sign In
-          </Link>
-          <Link to="#" className={styles["links"]}>
-            Sign Up
-          </Link>
+          <li className={styles["links"]}>
+            <Link to="/signin">Sign In</Link>
+          </li>
+          <li className={styles["links"]}>
+            <Link to="/signup">Sign Up</Link>
+          </li>
         </ul>
       </div>
     </div>
