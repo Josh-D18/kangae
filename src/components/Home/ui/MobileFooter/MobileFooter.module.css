@@ -2,5 +2,5 @@
   @apply w-[50px] h-[50px] hover:w-[70px] hover:h-[70px] transition-all duration-200 ease-in;
 }
 .container {
-  @apply fixed bottom-0 flex w-full h-[80px] justify-around items-center md:hidden bg-primary-200;
+  @apply fixed bottom-0 flex w-full h-[80px] justify-around items-center md:hidden bg-secondary-200;
 }

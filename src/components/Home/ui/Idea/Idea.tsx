@@ -26,6 +26,7 @@ const Idea = (props: IIdea) => {
           <h2 className={styles["idea-title"]}>{idea}</h2>
           <h3 className={styles["idea-category"]}>{category}</h3>
         </div>
+        {/* <p>Likes</p> */}
       </div>
       {/* <Modal
         username={username}

@@ -4,9 +4,9 @@ import MobileFooter from "./ui/MobileFooter/MobileFooter";
 import styles from "./Home.module.css";
 import Modal from "./ui/Modal/Modal";
 import plus from "../../assets/icons/plus-icon.webp";
-const Home = () => {
-  let [isOpen, setIsOpen] = useState(true);
+import search from "../../assets/icons/search-icon.png";
 
+const Home = () => {
   const ideas = [
     {
       id: 1,
@@ -69,14 +69,15 @@ const Home = () => {
   return (
     <div className={styles["container"]}>
       <div className="h-[100%] overflow-y-auto scroll-smooth">
-        <div className="flex items-center justify-around pt-11">
-          <div>
-            <p>Trending</p>
+        <div className="flex items-center justify-around pt-11 md:hidden">
+          <div className="flex">
+            <p className="px-3">Trending</p>
+            <p className="px-3">Most Recent</p>
           </div>
-          <div>
-            <img src={plus} className="w-[35px]" />
+          <div className="flex items-center rounded-full bg-secondary-200">
+            <img src={plus} className="w-[35px] mx-4 my-1" />
 
-            <img src={plus} className="w-[35px]" />
+            <img src={search} className="w-[35px] mx-4 my-1" />
           </div>
         </div>
         {ideas.map((idea) => (
