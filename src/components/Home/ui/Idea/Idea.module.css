@@ -1,5 +1,5 @@
 .container {
-  @apply w-[322px] flex flex-col m-auto py-10 max-h-full;
+  @apply w-[322px] flex flex-col m-auto py-10 h-full;
 }
 
 @media (min-width: 768px) {

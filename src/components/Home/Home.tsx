@@ -57,7 +57,7 @@ const Home = () => {
 
         <div className="flex flex-row-reverse">
           <div className="sm:hidden md:flex w-[300px] flex-[0 0 auto] lg:flex-[1_1_auto] xl:flex-[0.5_1_auto]">
-            <div className="max-h-[50%] w-[400px] pr-3 fixed py-6">
+            <div className="h-[50%] w-[400px] pr-3 fixed py-6">
               <Search />
               <div className={styles["home-create-idea-option-button"]}>
                 <Link to="/create-idea">

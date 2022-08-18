@@ -33,7 +33,7 @@ const DropDown = (props: IDropDown) => {
             <img
               src={closeIcon}
               alt=""
-              className="max-w-[20px] max-h-[20px] ml-[1.5rem]"
+              className="max-w-[20px] h-[20px] ml-[1.5rem]"
               onClick={() => setIsOpen(false)}
               aria-hidden="true"
             />

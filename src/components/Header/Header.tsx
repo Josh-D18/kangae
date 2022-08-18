@@ -13,12 +13,12 @@ const Header = () => {
   };
 
   return (
-    <div className=" max-h-[72px] flex justify-between w-full bg-secondary-200 items-center md:max-h-[100px]">
+    <div className=" h-[72px] flex justify-between w-full bg-secondary-200 items-center md:h-[100px]">
       <div className="flex items-center justify-start md:pb-5">
         <img
           src={headerLogo}
           alt="model"
-          className="max-w-[50px] max-h-[50px] ml-[1.5rem] md:w-[70px] md:max-h-[70px] md:mt-2"
+          className="max-w-[50px] h-[50px] ml-[1.5rem] md:w-[70px] md:h-[70px] md:mt-2"
         />
         <h1 className="text-primary-500 font-primary font-[700] ml-[1rem] md:text-[30px] md:font-[500] md:mt-2 self-center">
           Kangae
@@ -30,7 +30,7 @@ const Header = () => {
           <img
             src={hamburger}
             alt=""
-            className="max-w-[50px] max-h-[50px]"
+            className="max-w-[50px] h-[50px]"
             onClick={handleClick}
           />
           <DropDown isOpen={openModal} setIsOpen={setOpenModal} />
