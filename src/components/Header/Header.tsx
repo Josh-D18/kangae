@@ -20,7 +20,7 @@ const Header = () => {
           alt="model"
           className="max-w-[50px] h-[50px] ml-[1.5rem] md:w-[70px] md:max-h-[70px] md:mt-2"
         />
-        <h1 className="text-primary-500 font-primary font-[700] ml-[1rem] md:text-[30px] md:font-[500] md:mt-2 self-center">
+        <h1 className="text-primary-500 font-primary font-[700] ml-[1rem] md:text-[25px] md:font-[500] md:mt-2 self-center">
           Kangae
         </h1>
       </div>
