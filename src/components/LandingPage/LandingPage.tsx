@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Image from "../../assets/images/ideaLandingPageImageMobile-png.png";
 import styles from "./LandingPage.module.css";
 
@@ -11,7 +12,9 @@ const LandingPage = () => {
           Changing the world One Idea At A Time
         </p>
         <div className={styles["button-container"]}>
-          <button className={styles.button}>Share Ideas</button>
+          <Link to="/home">
+            <button className={styles.button}>Share Ideas</button>
+          </Link>
         </div>
       </div>
     </div>
