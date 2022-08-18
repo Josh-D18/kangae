@@ -17,10 +17,10 @@ const SignUp = () => {
 
   return (
     <form
-      className="flex flex-col items-center justify-center w-full h-[95%] bg-secondary-200"
+      className="flex flex-col items-center justify-center w-full max-h-[95%] bg-secondary-200"
       onSubmit={handleSubmit(onSubmit)}
     >
-      <div className="font-[500] not-italic text-[40px] leading-[42px] text-center tracking-[4.82px] my-3 w-[311px] h-[42px] text-primary-500 font-primary">
+      <div className="font-[500] not-italic text-[40px] leading-[42px] text-center tracking-[4.82px] my-3 w-[311px] max-h-[42px] text-primary-500 font-primary">
         Sign Up
       </div>
 

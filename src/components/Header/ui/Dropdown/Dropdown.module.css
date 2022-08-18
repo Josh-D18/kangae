@@ -1,12 +1,12 @@
 .container {
-  @apply w-[100vw] h-[100vh] bg-primary-200 absolute top-[0px];
+  @apply w-[100vw] max-h-[100vh] bg-primary-200 absolute top-[0px];
 }
 .container-content {
-  @apply flex flex-col items-center justify-center w-full h-[500px];
+  @apply flex flex-col items-center justify-center w-full max-h-[500px];
 }
 
 .links {
-  @apply font-[300] not-italic text-[40px] leading-[42px] text-center tracking-[10.82px] my-5 w-[311px] h-[47px] text-primary-400 font-primary;
+  @apply font-[300] not-italic text-[40px] leading-[42px] text-center tracking-[10.82px] my-5 w-[311px] max-h-[47px] text-primary-400 font-primary;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

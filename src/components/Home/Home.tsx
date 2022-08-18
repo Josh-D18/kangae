@@ -43,22 +43,25 @@ const Home = () => {
               Most Recent
             </p>
           </div>
-
           <div className="flex items-center rounded-full bg-secondary-200">
-            <Link to="#" aria-label="link to create idea page">
-              <img src={plus} className="w-[35px] mx-4 my-1" alt="addition" />
+            <Link to="/create-idea" aria-label="link to create idea page">
+              <img
+                src={plus}
+                className="max-w-[35px] mx-4 my-1"
+                alt="addition"
+              />
             </Link>
-            <img src={search} className="w-[35px] mx-4 my-1" alt="search" />
+            <img src={search} className="max-w-[35px] mx-4 my-1" alt="search" />
           </div>
         </div>
 
         <div className="flex flex-row-reverse">
           <div className="sm:hidden md:flex w-[300px] flex-[0 0 auto] lg:flex-[1_1_auto] xl:flex-[0.5_1_auto]">
-            <div className="h-[50%] w-[400px] pr-3 fixed py-6">
+            <div className="max-h-[50%] w-[400px] pr-3 fixed py-6">
               <Search />
               <div className={styles["home-create-idea-option-button"]}>
                 <Link to="/create-idea">
-                  <img src={plus} alt="plus" className="w-[25px]" />
+                  <img src={plus} alt="plus" className="max-w-[25px]" />
                 </Link>
               </div>
               <div>

@@ -1,11 +1,11 @@
 .icon {
-  @apply w-[50px] h-[50px] hover:w-[70px] hover:h-[70px] transition-all duration-200 ease-in;
+  @apply max-w-[50px] max-h-[50px] hover:w-[70px] hover:max-h-[70px] transition-all duration-200 ease-in;
 }
 
 .links-container {
-  @apply flex w-full h-full justify-around items-center;
+  @apply flex w-full max-h-full justify-around items-center;
 }
 
 .container {
-  @apply fixed bottom-0 flex w-full h-[85px] justify-around items-start md:hidden bg-secondary-200;
+  @apply fixed bottom-0 flex w-full max-h-[85px] justify-around items-start md:hidden bg-secondary-200;
 }

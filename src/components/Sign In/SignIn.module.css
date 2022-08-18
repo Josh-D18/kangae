@@ -1,5 +1,5 @@
 .button {
-  @apply w-[130px] h-[48px] rounded-[28px] mr-5 flex items-center justify-center text-primary-200 hover:ease-in hover:brightness-[98%] md:w-[200px] md:h-[57px] font-primary;
+  @apply w-[130px] max-h-[48px] rounded-[28px] mr-5 flex items-center justify-center text-primary-200 hover:ease-in hover:brightness-[98%] md:w-[200px] md:max-h-[57px] font-primary;
   box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
 }

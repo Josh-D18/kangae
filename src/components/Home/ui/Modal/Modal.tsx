@@ -56,7 +56,7 @@ const Modal = (props: IModal) => {
               <img
                 src={closeIcon}
                 alt="close"
-                className="w-[20px] self-end mr-[30px]"
+                className="max-w-[20px] self-end mr-[30px]"
                 onClick={() => setIsOpen(false)}
               />
               <Dialog.Title className={styles["idea-title"]}>
@@ -85,7 +85,11 @@ const Modal = (props: IModal) => {
                   {category}
                 </p>
                 <div className="flex items-center">
-                  <img src={heartIcon} alt="heart" className="w-[20px] mr-4" />
+                  <img
+                    src={heartIcon}
+                    alt="heart"
+                    className="max-w-[20px] mr-4"
+                  />
                   <p>{likes}</p>
                 </div>
               </div>

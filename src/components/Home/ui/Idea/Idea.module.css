@@ -1,5 +1,5 @@
 .container {
-  @apply w-[322px] flex flex-col m-auto py-10 h-full;
+  @apply w-[322px] flex flex-col m-auto py-10 max-h-full;
 }
 
 @media (min-width: 768px) {
@@ -28,7 +28,7 @@
 }
 
 .icon {
-  @apply w-[50px] h-auto object-contain;
+  @apply max-w-[50px] h-auto object-contain;
 }
 
 .idea-text-container {
