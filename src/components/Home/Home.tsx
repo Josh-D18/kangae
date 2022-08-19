@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import clsx from "clsx";
 import Search from "./ui/Search/Search";
 import SearchModal from "./ui/SearchModal/SearchModal";
+import DropdownOptions from "./ui/DropdownOptions/DropdownOptions";
 
 const Home = () => {
   const [modalID, setModalID] = useState(0);
@@ -74,12 +75,7 @@ const Home = () => {
           <div className="sm:hidden md:flex w-[300px] flex-[0 0 auto] lg:flex-[1_1_auto] xl:flex-[0.5_1_auto]">
             <div className="h-[50%] w-[400px] pr-3 fixed py-6">
               <Search />
-              <div className={styles["home-create-idea-option-button"]}>
-                <Link to="/create-idea">
-                  <img src={plus} alt="plus" className="max-w-[25px]" />
-                </Link>
-              </div>
-              <div>
+              <div className="my-6">
                 <p
                   className={clsx(
                     styles["sortByText"],
@@ -101,6 +97,7 @@ const Home = () => {
                   Most Recent
                 </p>
               </div>
+              <DropdownOptions />
             </div>
           </div>
 
