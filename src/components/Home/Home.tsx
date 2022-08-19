@@ -9,14 +9,20 @@ import { ideas } from "../../data/ideas";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 import Search from "./ui/Search/Search";
+import SearchModal from "./ui/SearchModal/SearchModal";
 
 const Home = () => {
   const [modalID, setModalID] = useState(0);
   const [viewSortBy, setViewSortBy] = useState(true);
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
+  let [isOpenSearch, setIsOpenSearch] = useState(false);
 
   const handleSortBy = (state: boolean) => {
     setViewSortBy(state);
+  };
+
+  const handleSearch = () => {
+    setIsOpenSearch(true);
   };
 
   return (
@@ -51,10 +57,19 @@ const Home = () => {
                 alt="addition"
               />
             </Link>
-            <img src={search} className="max-w-[35px] mx-4 my-1" alt="search" />
+            <div onClick={handleSearch}>
+              <img
+                src={search}
+                className="max-w-[35px] mx-4 my-1"
+                alt="search"
+              />
+            </div>
+
+            <SearchModal isOpen={isOpenSearch} setIsOpen={setIsOpenSearch} />
           </div>
         </div>
 
+        {/* Tablet Size And Up */}
         <div className="flex flex-row-reverse">
           <div className="sm:hidden md:flex w-[300px] flex-[0 0 auto] lg:flex-[1_1_auto] xl:flex-[0.5_1_auto]">
             <div className="h-[50%] w-[400px] pr-3 fixed py-6">
@@ -105,23 +120,24 @@ const Home = () => {
           <MobileFooter />
         </div>
       </div>
-      <div></div>
-      {ideas
-        .filter((idea) => idea.id === modalID)
-        .map((idea) => (
-          <div key={idea.id}>
-            <Modal
-              username={idea.username}
-              description={idea.description}
-              title={idea.idea}
-              category={idea.category}
-              id={idea.id}
-              isOpen={isOpen}
-              setIsOpen={setIsOpen}
-              likes={idea.likes}
-            />
-          </div>
-        ))}
+      <div>
+        {ideas
+          .filter((idea) => idea.id === modalID)
+          .map((idea) => (
+            <div key={idea.id}>
+              <Modal
+                username={idea.username}
+                description={idea.description}
+                title={idea.idea}
+                category={idea.category}
+                id={idea.id}
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                likes={idea.likes}
+              />
+            </div>
+          ))}
+      </div>
     </div>
   );
 };

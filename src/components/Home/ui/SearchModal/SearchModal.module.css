@@ -1,0 +1,36 @@
+.container {
+  @apply absolute top-0 left-0 right-0 w-full m-auto bg-primary-200 h-full rounded-md;
+}
+
+.content-container {
+  @apply flex flex-col items-center h-full justify-center;
+}
+
+.input {
+  @apply my-5 w-[322px] h-[60px] rounded-lg border-[2px] px-3;
+  border: 2px solid #423a3a;
+}
+
+.input-error {
+  @apply border-error;
+  border: 3px solid;
+  border-color: #ac1a2f;
+}
+
+.input:hover {
+  border: 3px solid;
+}
+
+.title {
+  @apply text-[25px] font-primary text-[#800080] font-[500] capitalize pr-[16px] tracking-[1px] py-6;
+}
+
+.description {
+  @apply text-[16px] font-primary text-primary-500 font-[500] capitalize leading-[25px] tracking-[1px] py-2 px-1;
+}
+
+.button {
+  @apply w-[130px] h-[48px] rounded-[28px] mr-5 flex items-center justify-center text-primary-200 hover:ease-in hover:brightness-[98%] md:w-[200px] md:h-[57px] font-primary;
+  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+}
