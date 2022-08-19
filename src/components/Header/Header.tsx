@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <div className=" h-[72px] flex justify-between w-full bg-secondary-200 items-center md:h-[100px]">
+    <div className=" h-[72px] flex justify-between w-full bg-secondary-200 items-center md:h-[100px] sticky top-0">
       <div className="flex items-center justify-start md:pb-5">
         <img
           src={headerLogo}
