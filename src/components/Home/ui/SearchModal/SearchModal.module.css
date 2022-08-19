@@ -1,5 +1,5 @@
 .container {
-  @apply absolute top-0 left-0 right-0 w-full m-auto bg-primary-200 h-full rounded-md;
+  @apply absolute top-0 left-0 right-0 w-full m-auto bg-primary-200 h-full rounded-md md:hidden;
 }
 
 .content-container {
