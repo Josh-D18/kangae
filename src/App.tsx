@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import CreateIdea from "./components/CreateIdea/ui/CreateIdea";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import LandingPage from "./components/LandingPage/LandingPage";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/create-idea" element={<CreateIdea />} />
       </Routes>
     </div>
   );
