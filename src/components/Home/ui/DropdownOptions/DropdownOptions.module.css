@@ -5,7 +5,7 @@
 }
 
 .dropdown-item {
-  @apply text-[18px] py-3 capitalize w-[80%] text-center;
+  @apply text-[18px] py-3 capitalize w-[80%] text-center focus:text-[19px] focus:font-[700];
   border-bottom: 1px solid white;
 }
 

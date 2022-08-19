@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import styles from "./SearchModal.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -15,7 +14,6 @@ interface ISearchModal {
 }
 
 const SearchModal = (props: ISearchModal) => {
-  // let [isOpen, setIsOpen] = useState(true);
   const { isOpen, setIsOpen } = props;
   const {
     register,

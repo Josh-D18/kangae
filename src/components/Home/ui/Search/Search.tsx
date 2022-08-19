@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Search.module.css";
 import { useForm, SubmitHandler } from "react-hook-form";
 import clsx from "clsx";
@@ -17,7 +16,7 @@ const Search = () => {
   const onSubmit: SubmitHandler<FormValues> = (data) => console.log(data);
 
   return (
-    <form>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <input
         placeholder="Enter Idea"
         className={clsx(styles["input"], errors.idea && styles["input-error"])}
