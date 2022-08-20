@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import CreateIdea from "./components/CreateIdea/ui/CreateIdea";
+import CreateIdea from "./components/CreateIdea/CreateIdea";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import LandingPage from "./components/LandingPage/LandingPage";
