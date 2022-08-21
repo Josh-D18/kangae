@@ -1,4 +1,3 @@
-import myprofileicon from "../../../../assets/icons/my-profile-icon.png";
 import styles from "./Idea.module.css";
 import likeArrow from "../../../../assets/icons/like-up-arrow.png";
 import messageBubble from "../../../../assets/icons/messagebubble.png";

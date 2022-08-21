@@ -1,31 +1,29 @@
-import { useState } from "react";
 import Idea from "./ui/Idea/Idea";
-import MobileFooter from "./ui/MobileFooter/MobileFooter";
 import styles from "./Home.module.css";
-import Modal from "./ui/Modal/Modal";
+// import Modal from "./ui/Modal/Modal";
 import dropdown from "../../assets/icons/white-dropdown-icon.svg";
-import plus from "../../assets/icons/white-plus-icon.png";
+// import plus from "../../assets/icons/white-plus-icon.png";
 import { ideas } from "../../data/ideas";
-import { Link } from "react-router-dom";
-import clsx from "clsx";
-import Search from "./ui/Search/Search";
-import SearchModal from "./ui/SearchModal/SearchModal";
-import DropdownOptions from "./ui/DropdownOptions/DropdownOptions";
+// import { Link } from "react-router-dom";
+// import clsx from "clsx";
+// import Search from "./ui/Search/Search";
+// import SearchModal from "./ui/SearchModal/SearchModal";
+// import DropdownOptions from "./ui/DropdownOptions/DropdownOptions";
 import Header from "../Header/Header";
 
 const Home = () => {
-  const [modalID, setModalID] = useState(0);
-  const [viewSortBy, setViewSortBy] = useState(true);
-  let [isOpen, setIsOpen] = useState(false);
-  let [isOpenSearch, setIsOpenSearch] = useState(false);
+  // const [modalID, setModalID] = useState(0);
+  // const [viewSortBy, setViewSortBy] = useState(true);
+  // let [isOpen, setIsOpen] = useState(false);
+  // let [isOpenSearch, setIsOpenSearch] = useState(false);
 
-  const handleSortBy = (state: boolean) => {
-    setViewSortBy(state);
-  };
+  // const handleSortBy = (state: boolean) => {
+  //   setViewSortBy(state);
+  // };
 
-  const handleSearch = () => {
-    setIsOpenSearch(true);
-  };
+  // const handleSearch = () => {
+  //   setIsOpenSearch(true);
+  // };
 
   return (
     <div className={styles["container"]}>
@@ -72,7 +70,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         {ideas
           .filter((idea) => idea.id === modalID)
           .map((idea) => (
@@ -89,7 +87,7 @@ const Home = () => {
               />
             </div>
           ))}
-      </div>
+      </div> */}
     </div>
   );
 };

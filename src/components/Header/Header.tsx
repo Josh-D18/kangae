@@ -1,4 +1,3 @@
-import headerLogo from "../../assets/images/bright-idea.png";
 import hamburger from "../../assets/icons/white-hamburger.svg";
 import { useState } from "react";
 import DropDown from "./ui/Dropdown/DropDown";
