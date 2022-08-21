@@ -1,5 +1,5 @@
 import headerLogo from "../../assets/images/bright-idea.png";
-import hamburger from "../../assets/icons/hamburger.svg";
+import hamburger from "../../assets/icons/white-hamburger.svg";
 import { useState } from "react";
 import DropDown from "./ui/Dropdown/DropDown";
 import { Link } from "react-router-dom";
@@ -17,17 +17,22 @@ const Header = () => {
     <div className={styles["container"]}>
       <div className="flex flex-col justify-start m-[16px_24px]">
         <h1 className={styles["header-title"]}>Kangae</h1>
-        <p className={clsx(styles["header-title"], "font-[500], text-[13px]")}>
-          Welcome User
+        <p
+          className={clsx(
+            styles["header-title"],
+            "font-[500], text-[13px] opacity-[0.75] leading-[19px]"
+          )}
+        >
+          Welcome Guest
         </p>
       </div>
 
-      <div className="md:m-2 md:mr-5 m-[0.8rem] mr-[1.05rem] md:mt-[2rem] ">
+      <div className="m-[27px_24px_28px]">
         <div className="md:hidden">
           <img
             src={hamburger}
             alt=""
-            className="max-w-[50px] h-[50px]"
+            className="max-w-[20px] h-[17px]"
             onClick={handleClick}
           />
           <DropDown isOpen={openModal} setIsOpen={setOpenModal} />
