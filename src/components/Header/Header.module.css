@@ -11,3 +11,17 @@
   @apply font-[400];
   transform: translateY(0) scale(1.2);
 }
+
+.container {
+  @apply h-[72px] flex justify-between w-full  items-center md:h-[100px] sticky top-0;
+  background: radial-gradient(
+    128.88% 128.88% at 103.9% -10.39%,
+    #e84d70 0%,
+    #a337f6 53.09%,
+    #28a7ed 100%
+  );
+}
+
+.header-title {
+  @apply text-primary-200 font-primary font-[700]  leading-[22px] not-italic tracking-[-0.1875px];
+}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import DropDown from "./ui/Dropdown/DropDown";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
+import clsx from "clsx";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -13,16 +14,12 @@ const Header = () => {
   };
 
   return (
-    <div className=" h-[72px] flex justify-between w-full bg-secondary-200 items-center md:h-[100px] sticky top-0">
-      <div className="flex items-center justify-start md:pb-5">
-        <img
-          src={headerLogo}
-          alt="model"
-          className="max-w-[50px] h-[50px] ml-[1.5rem] md:w-[70px] md:max-h-[70px] md:mt-2"
-        />
-        <h1 className="text-primary-500 font-primary font-[700] ml-[1rem] md:text-[25px] md:font-[500] md:mt-2 self-center">
-          Kangae
-        </h1>
+    <div className={styles["container"]}>
+      <div className="flex flex-col justify-start m-[16px_24px]">
+        <h1 className={styles["header-title"]}>Kangae</h1>
+        <p className={clsx(styles["header-title"], "font-[500], text-[13px]")}>
+          Welcome User
+        </p>
       </div>
 
       <div className="md:m-2 md:mr-5 m-[0.8rem] mr-[1.05rem] md:mt-[2rem] ">

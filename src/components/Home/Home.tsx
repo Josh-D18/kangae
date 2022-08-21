@@ -4,13 +4,14 @@ import MobileFooter from "./ui/MobileFooter/MobileFooter";
 import styles from "./Home.module.css";
 import Modal from "./ui/Modal/Modal";
 import dropdown from "../../assets/icons/white-dropdown-icon.svg";
-import search from "../../assets/icons/search-icon.png";
+import plus from "../../assets/icons/white-plus-icon.png";
 import { ideas } from "../../data/ideas";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 import Search from "./ui/Search/Search";
 import SearchModal from "./ui/SearchModal/SearchModal";
 import DropdownOptions from "./ui/DropdownOptions/DropdownOptions";
+import Header from "../Header/Header";
 
 const Home = () => {
   const [modalID, setModalID] = useState(0);
@@ -29,6 +30,7 @@ const Home = () => {
   return (
     <div className={styles["container"]}>
       <div className={styles["home-content-container"]}>
+        <Header />
         <div className="flex items-center justify-around bg-tertiary-200  max-h-[56px] w-full h-full">
           <div className="flex items-center">
             <p className="mr-1 font-[400] text-[13px] leading-[19px] text-tertiary-100">
@@ -45,7 +47,10 @@ const Home = () => {
           </div>
           <div>
             <button className={styles["button"]}>
-              <span className={styles["button-text"]}>Add Plus</span>
+              <span className={styles["button-text"]}>
+                {/* <img src={plus} alt="" /> */}
+                Add Idea
+              </span>
             </button>
           </div>
         </div>
