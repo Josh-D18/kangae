@@ -1,15 +1,5 @@
 .container {
   @apply w-full bg-tertiary-300 h-full;
-  height: calc(100% - 150px);
-}
-
-@media (min-width: 768px) {
-  .container {
-    height: calc(100% - 100px);
-  }
-}
-
-.option-button {
 }
 
 .sortByText {
@@ -27,4 +17,8 @@
 .home-content-container {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.button {
+  @apply bg-primary-600 rounded-[10px] p-[10.5px_17px_10.5px_16px] text-tertiary-100 leading-[19px] text-[13px] font-[700] not-italic;
 }

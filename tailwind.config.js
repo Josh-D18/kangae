@@ -24,6 +24,7 @@ module.exports = {
         "tertiary-400": "#62BCFA",
         "tertiary-300": "#F2F2F2",
         "tertiary-200": "#373F68",
+        "tertiary-100": "#F2F4FE",
         success: "#004D44",
         error: "#AC1A2F",
         caution: "#CF7600",
