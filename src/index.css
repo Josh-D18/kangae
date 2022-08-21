@@ -13,6 +13,7 @@ body {
   width: 100vw;
   height: 100vh;
   scroll-behavior: smooth;
+  @apply font-['Jost'];
 }
 
 #root {
@@ -110,4 +111,13 @@ meter {
 /* apply back the draggable feature - exist only in Chromium and Safari */
 :where([draggable="true"]) {
   -webkit-user-drag: element;
+}
+
+@layer components {
+  .button {
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.6");
+    box-shadow: theme("boxShadow.xl");
+  }
 }

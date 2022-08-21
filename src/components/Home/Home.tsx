@@ -29,78 +29,19 @@ const Home = () => {
   return (
     <div className={styles["container"]}>
       <div className={styles["home-content-container"]}>
-        <div className="flex items-center justify-around pt-11 md:hidden">
+        <div className="flex items-center justify-around bg-tertiary-200  max-h-[56px] w-full h-full">
           <div className="flex">
-            <p
-              className={clsx(
-                styles["sortByText"],
-                !viewSortBy && "rounded-full bg-primary-600"
-              )}
-              onClick={() => handleSortBy(false)}
-            >
-              Most Liked
-            </p>
-            <p
-              className={clsx(
-                styles["sortByText"],
-                viewSortBy && "rounded-full bg-primary-600"
-              )}
-              onClick={() => handleSortBy(true)}
-            >
-              Most Recent
-            </p>
+            <p className="mr-1">Sort by</p>
+            <span>:</span>
+            <p className="ml-1">Most Upvotes</p>
           </div>
-          <div className="flex items-center rounded-full bg-secondary-200">
-            <Link to="/create-idea" aria-label="link to create idea page">
-              <img
-                src={plus}
-                className="max-w-[35px] mx-4 my-1"
-                alt="addition"
-              />
-            </Link>
-            <div onClick={handleSearch}>
-              <img
-                src={search}
-                className="max-w-[35px] mx-4 my-1"
-                alt="search"
-              />
-            </div>
-
-            <SearchModal isOpen={isOpenSearch} setIsOpen={setIsOpenSearch} />
+          <div>
+            <button>Add Feedback</button>
           </div>
         </div>
 
         {/* Tablet Size And Up */}
         <div className="flex flex-row-reverse">
-          <div className="sm:hidden md:flex w-[300px] flex-[0 0 auto] lg:flex-[1_1_auto] xl:flex-[0.5_1_auto]">
-            <div className="h-[50%] w-[400px] pr-3 fixed py-6">
-              <Search />
-              <div className="my-6">
-                <p
-                  className={clsx(
-                    styles["sortByText"],
-                    "w-[50%] my-2",
-                    !viewSortBy && "rounded-full bg-primary-600"
-                  )}
-                  onClick={() => handleSortBy(false)}
-                >
-                  Most Liked
-                </p>
-                <p
-                  className={clsx(
-                    styles["sortByText"],
-                    "w-[50%] my-2",
-                    viewSortBy && "rounded-full bg-primary-600"
-                  )}
-                  onClick={() => handleSortBy(true)}
-                >
-                  Most Recent
-                </p>
-              </div>
-              <DropdownOptions />
-            </div>
-          </div>
-
           <div className="flex-[2_0_auto] xl:flex-[1_0_auto]">
             {ideas.map((idea) => (
               <div key={idea.id}>
@@ -108,13 +49,13 @@ const Home = () => {
                   idea={idea.idea}
                   category={idea.category}
                   id={idea.id}
-                  setModalID={setModalID}
-                  setIsOpen={setIsOpen}
+                  description={idea.description}
+                  likes={idea.likes}
                 />
               </div>
             ))}
           </div>
-          <MobileFooter />
+          {/* <MobileFooter /> */}
         </div>
       </div>
       <div>

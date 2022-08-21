@@ -10,7 +10,7 @@ import SignUp from "./components/Sign Up/SignUp";
 function App() {
   return (
     <div className={"site-container"}>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUp />} />

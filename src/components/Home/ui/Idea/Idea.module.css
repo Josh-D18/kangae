@@ -1,52 +1,31 @@
 .container {
-  @apply w-[322px] flex flex-col m-auto py-10 h-full;
+  @apply max-w-[327px] w-full flex flex-col m-auto mb-[55px] mt-[32px] h-full;
 }
 
-@media (min-width: 768px) {
-  .container {
-    @apply rounded-sm my-7 w-[380px];
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border: 3px solid;
-    border-color: #423a3a;
-    border-radius: 10px;
-  }
-
-  .container:hover {
-    border-color: #ce9898;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    @apply xl:w-[600px];
-  }
-}
-
-.icon-container {
-  @apply flex items-center w-full justify-start;
-}
-
-.icon {
-  @apply max-w-[50px] h-auto object-contain;
-}
-
-.idea-text-container {
-  @apply ml-[3px] flex w-full items-center;
+.content-container {
+  @apply bg-primary-200 rounded-[10px] p-[24px_24px];
 }
 
 .idea-title {
-  @apply text-[16px] font-primary text-primary-500 font-[500] capitalize pr-[16px] whitespace-nowrap;
-}
-
-.idea-category {
-  @apply text-[15px] font-primary text-primary-500 font-[600] capitalize;
+  @apply not-italic font-[700] text-[13px] leading-[18.79px] tracking-[-0.180556px] text-secondary-300 mb-[9px];
 }
 
 .idea-description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 250px;
-  display: block;
-  overflow: hidden;
+  @apply mb-[8px] font-[400] not-italic leading-[19px] text-[13px] text-secondary-100;
+}
+
+.idea-category {
+  @apply mb-[16px] bg-primary-100 max-w-[111px]  rounded-[10px] h-[30px] flex items-center justify-center text-primary-400 font-[600] text-[13px] leading-[19px];
+}
+
+.idea-likes {
+  @apply rounded-[10px] flex items-center justify-center bg-primary-100 max-w-[69px] h-[32px] w-full;
+}
+
+.idea-number-text {
+  @apply text-secondary-300 leading-[19px] tracking-[-0.180556px] font-[700] text-[13px] ml-[10px];
+}
+
+.idea-comments {
+  @apply flex items-center;
 }

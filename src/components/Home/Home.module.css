@@ -1,5 +1,5 @@
 .container {
-  @apply w-full bg-primary-200 h-full;
+  @apply w-full bg-tertiary-300 h-full;
   height: calc(100% - 150px);
 }
 
