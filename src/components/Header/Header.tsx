@@ -4,12 +4,13 @@ import DropDown from "./ui/Dropdown/DropDown";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import clsx from "clsx";
+import whiteCloseIcon from "../../assets/icons/white-close-icon.svg";
 
 const Header = () => {
   const [openModal, setOpenModal] = useState(false);
 
-  const handleClick = () => {
-    setOpenModal(true);
+  const handleClick = (val: boolean) => {
+    setOpenModal(val);
   };
 
   return (
@@ -28,12 +29,23 @@ const Header = () => {
 
       <div className="m-[27px_24px_28px]">
         <div className="md:hidden">
-          <img
-            src={hamburger}
-            alt=""
-            className="max-w-[20px] h-[17px]"
-            onClick={handleClick}
-          />
+          {openModal ? (
+            <img
+              src={whiteCloseIcon}
+              alt=""
+              className="max-w-[16.26px] h-[16.26px] transition-all duration-200"
+              onClick={() => handleClick(false)}
+              aria-hidden="true"
+            />
+          ) : (
+            <img
+              src={hamburger}
+              alt=""
+              className="max-w-[20px] h-[17px] duration-300"
+              onClick={() => handleClick(true)}
+              aria-hidden="true"
+            />
+          )}
           <DropDown isOpen={openModal} setIsOpen={setOpenModal} />
         </div>
         <ul className={styles["links-container"]}>

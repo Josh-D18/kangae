@@ -1,5 +1,5 @@
 import styles from "./Idea.module.css";
-import likeArrow from "../../../../assets/icons/like-up-arrow.png";
+import likeArrow from "../../../../assets/icons/like-up-arrow.svg";
 import messageBubble from "../../../../assets/icons/messagebubble.png";
 import clsx from "clsx";
 interface IIdea {
@@ -22,7 +22,7 @@ const Idea = (props: IIdea) => {
           <div className={styles["idea-category"]}>{category}</div>
           <div className="flex justify-between h-[32px] items-center ">
             <div className={styles["idea-likes"]}>
-              <img src={likeArrow} className="w-[8px] h-[4px]" alt="likes" />
+              <img src={likeArrow} className="w-[8px] h-[9px]" alt="likes" />
               <span className={styles["idea-number-text"]}>{likes}</span>
             </div>
             <div className={styles["idea-comments"]}>

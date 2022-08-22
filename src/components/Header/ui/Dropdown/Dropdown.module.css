@@ -1,20 +1,40 @@
 .container {
-  @apply w-[100vw] h-[100vh] bg-primary-200 absolute top-[0px];
+  @apply w-[271px] h-full bg-secondary-400 absolute top-[72px] overflow-hidden md:hidden;
+  left: calc(100% - 266px);
 }
 .container-content {
-  @apply flex flex-col items-center justify-center w-full h-[500px];
+  @apply w-full h-[500px] m-[24px];
 }
 
 .links {
-  @apply font-[300] not-italic text-[40px] leading-[42px] text-center tracking-[10.82px] my-5 w-[311px] h-[47px] text-primary-400 font-primary;
+  @apply font-[600] not-italic text-[16px] leading-[42px] text-center tracking-[3.82px]  text-primary-400 font-primary;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.links:hover {
-  @apply font-[400];
-  transform: translateY(0) scale(1.2);
+.links-container {
+  @apply flex justify-between  mb-[8px] flex-col items-start w-[223px] my-[24px];
 }
 
-.links-container {
-  @apply flex flex-col;
+.options-container {
+  @apply bg-primary-200 w-[223px] max-h-[178px] h-auto rounded-[10px] flex flex-wrap p-[24px_24px] mb-[24px];
+}
+
+.category-item {
+  @apply not-italic font-[600] text-[13px] leading-[19px] active:text-primary-200 text-primary-400 max-w-[111px] max-h-[30px] bg-primary-300 w-auto h-full flex items-center justify-center rounded-[10px] active:bg-primary-400 mb-[14px] mr-[8px] p-[5px_16px];
+}
+
+.my-profile-title {
+  @apply font-[700] not-italic text-[18px] leading-[26px] tracking-[-0.25px] text-secondary-300;
+}
+
+.my-profile-friend-status {
+  @apply flex  items-center not-italic text-[16px] leading-[23px] text-secondary-200 font-[400];
+}
+
+.my-profile-view {
+  @apply font-[600] leading-[19px] text-[13px] underline text-primary-400;
+}
+
+.my-profile-friend-status-number {
+  @apply font-[700] text-[16px] leading-[23px] text-right not-italic text-secondary-200;
 }
