@@ -3,37 +3,53 @@
 }
 
 .input {
-  @apply h-[56px] md:h-[65px] lg:h-[70px] rounded-[8px] bg-primary-200 py-3 w-[100%]  my-3;
-  padding: 1rem;
-  border: 2px solid #423a3a;
+  @apply w-[279px] h-[48px] bg-secondary-400 rounded-[5px] mb-[24px] text-[13px] text-secondary-300 font-[400] leading-[19px] not-italic;
+  padding: 14px 15px 16px;
 }
 
 .input-description {
-  @apply h-[300px];
+  @apply h-[120px];
+  resize: none;
 }
 
 .input:focus {
   border: 2px solid #423a3a;
 }
+.input-selection {
+  background-image: url("../../assets/icons/down-arrow-icon.png");
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+  margin-right: 16px;
+}
 
 .button {
-  @apply w-[150px] h-[48px] rounded-[28px] mr-5 flex items-center justify-center text-primary-200 hover:ease-in hover:brightness-[98%] md:w-[200px] md:h-[57px] font-primary my-8;
-  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
-  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  @apply w-[279px] h-[40px] bg-primary-600 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px] mt-[16px];
+}
+
+.button-cancel {
+  @apply w-[279px] h-[40px] bg-secondary-300 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px];
 }
 
 .back-button {
-  @apply mb-[35px] font-[700] text-[13px] leading-[19px] not-italic text-secondary-200 pt-[34px] pl-[24px] mr-auto flex items-center;
+  @apply font-[700] text-[13px] leading-[19px] not-italic text-secondary-200 pt-[34px] pl-[24px] mr-auto flex items-center;
 }
 
 .title {
-  @apply font-[700] text-[18px] tracking-[-0.25px] leading-[26px] not-italic text-secondary-300 mt-[44px] mb-[24px];
+  @apply font-[700] text-[18px] tracking-[-0.25px] leading-[26px] not-italic text-secondary-300  mb-[24px] mx-[23px];
 }
 
 .form-container {
-  @apply flex flex-col items-center h-full w-[327px] bg-primary-200 m-auto rounded-[10px];
+  @apply flex flex-col items-start w-[327px] bg-primary-200 mt-[55px] mb-[77px] mx-auto rounded-[10px] h-[708px];
 }
 
 .form-input-container {
-  @apply flex flex-col w-[322px] items-center mb-5 md:w-[400px] lg:w-[500px];
+  @apply flex flex-col w-[322px] items-center  md:w-[400px] lg:w-[500px];
+}
+
+.form-label-title {
+  @apply font-[700] tracking-[-0.180556px] text-[13px] leading-[19px] not-italic text-secondary-300 mb-[3px];
+}
+
+.form-label-description {
+  @apply mb-[16px] not-italic leading-[19px] text-[13px] font-[400] text-secondary-200;
 }
