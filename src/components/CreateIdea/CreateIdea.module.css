@@ -1,6 +1,7 @@
 .container {
   @apply h-full;
 }
+
 .input {
   @apply h-[56px] md:h-[65px] lg:h-[70px] rounded-[8px] bg-primary-200 py-3 w-[100%]  my-3;
   padding: 1rem;
@@ -21,6 +22,18 @@
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
 }
 
+.back-button {
+  @apply mb-[35px] font-[700] text-[13px] leading-[19px] not-italic text-secondary-200 pt-[34px] pl-[24px] mr-auto flex items-center;
+}
+
 .title {
-  @apply my-9 text-[25px] font-primary text-primary-500 font-[500] capitalize pr-[16px] whitespace-nowrap;
+  @apply font-[700] text-[18px] tracking-[-0.25px] leading-[26px] not-italic text-secondary-300 mt-[44px] mb-[24px];
+}
+
+.form-container {
+  @apply flex flex-col items-center h-full w-[327px] bg-primary-200 m-auto rounded-[10px];
+}
+
+.form-input-container {
+  @apply flex flex-col w-[322px] items-center mb-5 md:w-[400px] lg:w-[500px];
 }

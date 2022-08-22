@@ -15,7 +15,7 @@
 }
 
 .description {
-  @apply font-[400] text-[13px] leading-[19px] text-center text-secondary-100 mb-[24px];
+  @apply font-[400] text-[13px] leading-[19px] text-center text-secondary-200 mb-[24px];
 }
 
 .button {

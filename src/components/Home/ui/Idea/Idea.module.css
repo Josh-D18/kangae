@@ -11,7 +11,7 @@
 }
 
 .idea-description {
-  @apply mb-[8px] font-[400] not-italic leading-[19px] text-[13px] text-secondary-100;
+  @apply mb-[8px] font-[400] not-italic leading-[19px] text-[13px] text-secondary-200;
 }
 
 .idea-category {
