@@ -1,5 +1,6 @@
 import dropdown from "../../../../assets/icons/white-dropdown-icon.svg";
 import styles from "./SortBy.module.css";
+import plusicon from "../../../../assets/icons/plus-icon.png";
 
 const SortBy = () => {
   return (
@@ -19,10 +20,12 @@ const SortBy = () => {
       </div>
       <div>
         <button className={styles["button"]}>
-          <span className={styles["button-text"]}>
-            {/* <img src={plus} alt="" /> */}
-            Add Idea
-          </span>
+          <img
+            src={plusicon}
+            alt="addition"
+            className="w-[11.45px] h-[11.43px]"
+          />
+          <span className="pl-[11px]">Add Idea</span>
         </button>
       </div>
     </div>

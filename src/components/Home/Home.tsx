@@ -16,7 +16,7 @@ const Home = () => {
         {/* Tablet Size And Up */}
         <div className="flex flex-row-reverse">
           <div className="flex-[2_0_auto] xl:flex-[1_0_auto]">
-            {ideas.length < 0 ? (
+            {ideas.length > 0 ? (
               ideas.map((idea) => (
                 <div key={idea.id}>
                   <Idea

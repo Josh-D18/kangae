@@ -19,5 +19,5 @@
 }
 
 .button {
-  @apply bg-primary-600 rounded-[10px] p-[10.5px_17px_10.5px_16px] text-tertiary-100 leading-[19px] text-[13px] font-[700] not-italic;
+  @apply bg-primary-600 rounded-[10px] p-[10.5px_17px_10.5px_16px] text-tertiary-100 leading-[19px] text-[13px] font-[700] not-italic flex items-center;
 }
