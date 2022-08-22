@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import CreateIdea from "./components/CreateIdea/CreateIdea";
+import EditIdea from "./components/EditIdea/EditIdea";
 import Home from "./components/Home/Home";
 import LandingPage from "./components/LandingPage/LandingPage";
 import SignIn from "./components/Sign In/SignIn";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/home" element={<Home />} />
         <Route path="/create-idea" element={<CreateIdea />} />
+        <Route path="/edit-idea" element={<EditIdea />} />
       </Routes>
     </div>
   );

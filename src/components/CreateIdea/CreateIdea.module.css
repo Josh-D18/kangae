@@ -53,3 +53,12 @@
 .form-label-description {
   @apply mb-[16px] not-italic leading-[19px] text-[13px] font-[400] text-secondary-200;
 }
+
+/* Edit Page */
+.button-delete {
+  @apply w-[279px] h-[40px] bg-secondary-100 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px];
+}
+
+.edit-form-container {
+  @apply flex flex-col items-start w-[327px] bg-primary-200 mt-[55px] mb-[77px] mx-auto rounded-[10px] h-[741px];
+}
