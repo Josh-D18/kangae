@@ -1,22 +1,54 @@
 import backarrow from "../../assets/icons/grey-back-arrow.png";
 import styles from "./FriendsList.module.css";
+import plusIcon from "../../assets/icons/plus-icon.png";
+import clsx from "clsx";
+import FriendItem from "./ui/FriendItem/FriendItem";
 
 const FriendsList = () => {
   return (
-    <div>
-      <div className="w-full h-[100px] bg-tertiary-200 flex justify-between">
-        <div className="flex flex-col">
-          <div className="">
+    <div className="h-full">
+      <div className={styles.container}>
+        <div className="flex flex-col py-[26px] px-[24px]">
+          <div className="flex items-center mb-[3px]">
             <img
               src={backarrow}
               alt="back arrow"
               className={styles["back-arrow"]}
             />
-            <span>Go Back</span>
+            <span className={styles["back-link-text"]}>Go Back</span>
           </div>
-          <span>Kanage</span>
+          <span className={styles["title"]}>Your Friends List</span>
         </div>
-        <button>Add Idea</button>
+        <button className={styles["button"]}>
+          <img src={plusIcon} alt="addtion" className="mr-[11px]" />
+          Add Idea
+        </button>
+      </div>
+
+      <div className={styles["friends-container"]}>
+        <div className={styles["status-container"]}>Offline (3)</div>
+        <div
+          className={clsx(
+            styles["status-container"],
+            styles["status-container-active"]
+          )}
+        >
+          Online (1)
+        </div>
+        <div className={styles["status-container"]}>Requests (2)</div>
+      </div>
+
+      <div className="h-full overflow-y-auto bg-tertiary-300">
+        <div className={styles["friend-status-container"]}>
+          <p className={styles["friend-title"]}>Online</p>
+          <p className={styles["friend-description"]}>
+            Total Of Friends You Have Online
+          </p>
+          <FriendItem />
+          <FriendItem />
+          <FriendItem />
+          <FriendItem />
+        </div>
       </div>
     </div>
   );
