@@ -16,11 +16,21 @@ const Idea = (props: IIdea) => {
   return (
     <div className={styles["container"]}>
       <div className={styles["content-container"]}>
-        <div className={styles["idea-text-container"]}>
+        <div className="sm:hidden md:block">
+          <div
+            className={clsx("md:mt-[8px] xl:mr-[40px]", styles["idea-likes"])}
+          >
+            <img src={likeArrow} className="w-[8px] h-[9px]" alt="likes" />
+            <span className={clsx("md:mt-[8px]", styles["idea-number-text"])}>
+              {likes}
+            </span>
+          </div>
+        </div>
+        <div>
           <div className={styles["idea-title"]}>{idea}</div>
           <div className={styles["idea-description"]}>{description}</div>
           <div className={styles["idea-category"]}>{category}</div>
-          <div className="flex justify-between h-[32px] items-center ">
+          <div className="flex justify-between h-[32px] items-center md:hidden">
             <div className={styles["idea-likes"]}>
               <img src={likeArrow} className="w-[8px] h-[9px]" alt="likes" />
               <span className={styles["idea-number-text"]}>{likes}</span>
@@ -35,6 +45,23 @@ const Idea = (props: IIdea) => {
                 2
               </span>
             </div>
+          </div>
+        </div>
+        <div className="sm:hidden md:block">
+          <div
+            className={clsx(
+              "md:mt-[34px] xl:ml-[263px]",
+              styles["idea-comments"]
+            )}
+          >
+            <img
+              src={messageBubble}
+              alt="message"
+              className="w-[18px] h-[16px] mr-[2px] md:mr-[8px]"
+            />
+            <span className={clsx(styles["idea-number-text"], "ml-[2px]")}>
+              2
+            </span>
           </div>
         </div>
       </div>

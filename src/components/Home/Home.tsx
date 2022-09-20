@@ -11,11 +11,12 @@ const Home = () => {
     <div className={styles["container"]}>
       <div className={styles["home-content-container"]}>
         <Header />
+
         <SortBy />
 
         {/* Tablet Size And Up */}
         <div className="flex flex-row-reverse">
-          <div className="flex-[2_0_auto] xl:flex-[1_0_auto]">
+          <div className={styles["idea-container"]}>
             {ideas.length > 0 ? (
               ideas.map((idea) => (
                 <div key={idea.id}>

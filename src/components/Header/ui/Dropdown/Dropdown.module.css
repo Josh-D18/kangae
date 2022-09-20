@@ -1,5 +1,5 @@
 .container {
-  @apply w-[271px] h-full bg-secondary-400 absolute top-[72px] overflow-hidden md:hidden;
+  @apply w-[266px] h-full bg-secondary-400 absolute top-[72px] overflow-hidden md:hidden;
   left: calc(100% - 266px);
 }
 .container-content {

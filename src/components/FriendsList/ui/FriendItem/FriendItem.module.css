@@ -12,7 +12,7 @@
 }
 
 .numberOfFriends {
-  @apply w-[110px] h-[40px] bg-primary-100 text-primary-400 font-[600] text-[13px] leading-[19px] rounded-[10px] py-[6px] px-[17px];
+  @apply w-[110px] h-[40px] bg-primary-300 text-primary-400 font-[600] text-[13px] leading-[19px] rounded-[10px] py-[6px] px-[17px];
 }
 
 .numberOfFriends-number {

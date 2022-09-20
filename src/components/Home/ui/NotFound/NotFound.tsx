@@ -19,7 +19,9 @@ const NotFound = () => {
             alt="addition"
             className="w-[11.45px] h-[11.43px]"
           />
-          <span className="pl-[11px]">Add Idea</span>
+          <span className="pl-[11px] font-[700] md:text-[14px] leading-[18.79px] text-[13px] md:leading-[20.23px]">
+            Add Idea
+          </span>
         </button>
       </div>
     </div>

@@ -1,3 +1,7 @@
 .button {
   @apply bg-primary-600 rounded-[10px] p-[10.5px_17px_10.5px_16px] text-tertiary-100 leading-[19px] text-[13px] font-[700] not-italic flex items-center;
 }
+
+.container {
+  @apply flex items-center justify-around bg-tertiary-200  max-h-[56px] w-full h-full md:max-w-[689px] md:m-auto md:rounded-[10px] md:max-h-[72px] xl:max-w-[825px];
+}

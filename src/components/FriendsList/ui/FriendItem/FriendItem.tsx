@@ -31,7 +31,6 @@ const FriendItem = () => {
               alt="message bubble"
               className="w-[18px] h-[16px]"
             />
-            <span className={styles["numberOfFriends-number"]}>4</span>
           </div>
         </div>
       </div>
