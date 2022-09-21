@@ -3,7 +3,7 @@
 }
 
 .input {
-  @apply w-[279px] h-[48px] bg-secondary-400 rounded-[5px] mb-[24px] text-[13px] text-secondary-300 font-[400] leading-[19px] not-italic;
+  @apply w-[279px] h-[48px] bg-secondary-400 rounded-[5px] mb-[24px] text-[13px] text-secondary-300 font-[400] leading-[19px] not-italic md:w-[456px];
   padding: 14px 15px 16px;
 }
 
@@ -23,42 +23,42 @@
 }
 
 .button {
-  @apply w-[279px] h-[40px] bg-primary-600 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px] mt-[16px];
+  @apply w-[279px] h-[40px] bg-primary-600 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px] mt-[16px] md:w-[144px] md:h-[44px] md:ml-[0];
 }
 
 .button-cancel {
-  @apply w-[279px] h-[40px] bg-secondary-300 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px];
+  @apply w-[279px] h-[40px] bg-secondary-300 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px] md:w-[93px] md:h-[44px] md:mt-[16px] md:mr-[16px];
 }
 
 .back-button {
-  @apply font-[700] text-[13px] leading-[19px] not-italic text-secondary-200 pt-[34px] pl-[24px] mr-auto flex items-center;
+  @apply font-[700] text-[13px] leading-[19px] not-italic text-secondary-200 pt-[34px] pl-[24px] mr-auto flex items-center md:w-[577px] w-[369px] m-auto;
 }
 
 .title {
-  @apply font-[700] text-[18px] tracking-[-0.25px] leading-[26px] not-italic text-secondary-300  mb-[24px] mx-[23px];
+  @apply font-[700] text-[18px] tracking-[-0.25px] leading-[26px] not-italic text-secondary-300  mb-[24px] mx-[23px] md:text-[24px] md:ml-[42px] md:tracking-[-0.33px] md:leading-[34.68px];
 }
 
 .form-container {
-  @apply flex flex-col items-start w-[327px] bg-primary-200 mt-[55px] mb-[77px] mx-auto rounded-[10px] h-[708px];
+  @apply flex flex-col items-start w-[327px] bg-primary-200 mt-[55px] mb-[77px] mx-auto rounded-[10px] h-[708px] md:w-[540px] md:h-[657px];
 }
 
 .form-input-container {
-  @apply flex flex-col w-[322px] items-center  md:w-[400px] lg:w-[500px];
+  @apply flex flex-col w-[322px] items-center  md:w-[456px] lg:w-[500px];
 }
 
 .form-label-title {
-  @apply font-[700] tracking-[-0.180556px] text-[13px] leading-[19px] not-italic text-secondary-300 mb-[3px];
+  @apply font-[700] tracking-[-0.180556px] text-[13px] leading-[19px] not-italic text-secondary-300 mb-[3px] md:text-[14px] md:leading-[20.23px] md:tracking-[-0.19px];
 }
 
 .form-label-description {
-  @apply mb-[16px] not-italic leading-[19px] text-[13px] font-[400] text-secondary-200;
+  @apply mb-[16px] not-italic leading-[19px] text-[13px] font-[400] text-secondary-200 md:text-[14px] md:leading-[20.23px];
 }
 
 /* Edit Page */
 .button-delete {
-  @apply w-[279px] h-[40px] bg-secondary-100 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px];
+  @apply w-[279px] h-[40px] bg-secondary-100 mx-[24px] text-center text-tertiary-100 mb-[16px] rounded-[10px] font-[700] leading-[19px] text-[13px] md:w-[93px] md:h-[44px] md:mt-[16px] md:mr-[86px];
 }
 
 .edit-form-container {
-  @apply flex flex-col items-start w-[327px] bg-primary-200 mt-[55px] mb-[77px] mx-auto rounded-[10px] h-[741px];
+  @apply flex flex-col items-start w-[327px] bg-primary-200 mt-[55px] mb-[77px] mx-auto rounded-[10px] h-[741px] md:w-[540px] md:h-[657px];
 }

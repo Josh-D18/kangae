@@ -57,17 +57,17 @@ const EditIdea = () => {
           onSubmit={handleSubmit(onSubmit)}
           className={styles["edit-form-container"]}
         >
-          <div className="relative top-[-18px] left-[20px] w-[40px] h-[40px]">
+          <div className="relative top-[-18px] md:left-[37px] left-[20px] w-[40px] h-[40px]">
             <img src={circleButton} alt="circle" className="relative" />
             <img
               src={editIcon}
               alt="addition"
-              className="relative bottom-[27px] left-[12px]"
+              className="relative bottom-[27px] left-[12px] "
             />
           </div>
           <div className={styles["title"]}>Edit Idea</div>
           <div className={styles["form-input-container"]}>
-            <div className="flex flex-col px-[24px] w-full">
+            <div className="flex flex-col px-[24px] w-full md:w-[456px] md:px-[42px] lg:pl-[24px]">
               <label className={styles["form-label-title"]} htmlFor="idea">
                 Idea Title
               </label>
@@ -87,7 +87,7 @@ const EditIdea = () => {
           </div>
 
           <div className={styles["form-input-container"]}>
-            <div className="flex flex-col px-[24px] w-full">
+            <div className="flex flex-col px-[24px] w-full md:w-[456px] md:px-[42px] lg:pl-[24px]">
               <label className={styles["form-label-title"]} htmlFor="category">
                 Idea Category
               </label>
@@ -141,7 +141,7 @@ const EditIdea = () => {
             </div>
           </div>
           <div className={styles["form-input-container"]}>
-            <div className="flex flex-col px-[24px] w-full">
+            <div className="flex flex-col px-[24px] w-full md:w-[456px] md:px-[42px] lg:pl-[24px]">
               <label
                 className={styles["form-label-title"]}
                 htmlFor="description"
@@ -161,15 +161,17 @@ const EditIdea = () => {
                 id="description"
               />
             </div>
-            <button type="submit" className={styles["button"]}>
-              Search
-            </button>
-            <button type="button" className={styles["button-cancel"]}>
-              Cancel
-            </button>
-            <button type="button" className={styles["button-delete"]}>
-              Delete
-            </button>
+            <div className="md:flex md:flex-row-reverse md:ml-[90px] xl:ml-[50px]">
+              <button type="submit" className={styles["button"]}>
+                Search
+              </button>
+              <button type="button" className={styles["button-cancel"]}>
+                Cancel
+              </button>
+              <button type="button" className={styles["button-delete"]}>
+                Delete
+              </button>
+            </div>
           </div>
         </form>
       </div>

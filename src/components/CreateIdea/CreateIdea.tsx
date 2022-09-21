@@ -45,7 +45,7 @@ const CreateIdea = () => {
 
   return (
     <div className="w-full h-full overflow-y-auto bg-tertiary-300">
-      <div>
+      <div className="">
         <div className={styles["back-button"]}>
           <img
             src={backArrow}
@@ -58,7 +58,7 @@ const CreateIdea = () => {
           onSubmit={handleSubmit(onSubmit)}
           className={styles["form-container"]}
         >
-          <div className="relative top-[-18px] left-[20px] w-[40px] h-[40px]">
+          <div className="relative top-[-18px] left-[20px] w-[40px] h-[40px] md:left-[34px]">
             <img src={circleButton} alt="circle" className="relative" />
             <img
               src={plusIcon}
@@ -68,7 +68,7 @@ const CreateIdea = () => {
           </div>
           <div className={styles["title"]}>Create New Feedback</div>
           <div className={styles["form-input-container"]}>
-            <div className="flex flex-col px-[24px] w-full">
+            <div className="flex flex-col px-[24px] w-[327px] md:w-[456px]  md:px-[42px] lg:pl-[24px]">
               <label className={styles["form-label-title"]} htmlFor="idea">
                 Idea Title
               </label>
@@ -88,7 +88,7 @@ const CreateIdea = () => {
           </div>
 
           <div className={styles["form-input-container"]}>
-            <div className="flex flex-col px-[24px] w-full">
+            <div className="flex flex-col px-[24px] w-[327px] md:w-[456px] md:px-[42px] lg:pl-[24px]">
               <label className={styles["form-label-title"]} htmlFor="category">
                 Idea Category
               </label>
@@ -142,7 +142,7 @@ const CreateIdea = () => {
             </div>
           </div>
           <div className={styles["form-input-container"]}>
-            <div className="flex flex-col px-[24px] w-full">
+            <div className="flex flex-col px-[24px] w-[327px] md:w-[456px] md:px-[42px] lg:pl-[24px]">
               <label
                 className={styles["form-label-title"]}
                 htmlFor="description"
@@ -162,12 +162,14 @@ const CreateIdea = () => {
                 id="description"
               />
             </div>
-            <button type="submit" className={styles["button"]}>
-              Search
-            </button>
-            <button type="button" className={styles["button-cancel"]}>
-              Cancel
-            </button>
+            <div className=" md:flex md:flex-row-reverse md:items-center md:ml-[289px] lg:ml-[250px]">
+              <button type="submit" className={styles["button"]}>
+                Create
+              </button>
+              <button type="button" className={styles["button-cancel"]}>
+                Cancel
+              </button>
+            </div>
           </div>
         </form>
       </div>
