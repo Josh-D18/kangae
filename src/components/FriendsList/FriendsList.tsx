@@ -3,6 +3,7 @@ import styles from "./FriendsList.module.css";
 import plusIcon from "../../assets/icons/plus-icon.png";
 import clsx from "clsx";
 import FriendItem from "./ui/FriendItem/FriendItem";
+import { friends } from "../../data/friends";
 
 const FriendsList = () => {
   return (
@@ -44,10 +45,15 @@ const FriendsList = () => {
           <p className={styles["friend-description"]}>
             Total Of Friends You Have Online
           </p>
-          <FriendItem />
-          <FriendItem />
-          <FriendItem />
-          <FriendItem />
+          {friends.map(({ id, username, online, friendBio, numberOfIdeas }) => (
+            <FriendItem
+              id={id}
+              username={username}
+              online={online}
+              friendBio={friendBio}
+              numberOfIdeas={numberOfIdeas}
+            />
+          ))}
         </div>
       </div>
     </div>

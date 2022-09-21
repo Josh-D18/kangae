@@ -2,7 +2,17 @@ import onlineStatusIcon from "../../../../assets/icons/friend-status-online.png"
 import messagebubble from "../../../../assets/icons/messagebubble.png";
 import styles from "./FriendItem.module.css";
 
-const FriendItem = () => {
+interface IFriendItem {
+  id: number;
+  username: string;
+  online: boolean;
+  friendBio: string;
+  numberOfIdeas: number;
+}
+
+const FriendItem = (props: IFriendItem) => {
+  const { username, friendBio, numberOfIdeas } = props;
+
   return (
     <div className={styles["friend-info-container"]}>
       <div className={styles["line"]} />
@@ -16,14 +26,14 @@ const FriendItem = () => {
         Online
       </div>
       <div className="px-[24px] pb-[24px]">
-        <div className={styles["friend-name"]}>@timeIdeas</div>
-        <div className={styles["friend-description"]}>
-          Add ability to create professional looking portfolio from profile.
-        </div>
+        <div className={styles["friend-name"]}>@{username}</div>
+        <div className={styles["friend-description"]}>{friendBio}</div>
         <div className="flex justify-between mt-[30px]">
           <button className={styles["numberOfFriends"]}>
             # Of Ideas:
-            <span className={styles["numberOfFriends-number"]}>4</span>
+            <span className={styles["numberOfFriends-number"]}>
+              {numberOfIdeas}
+            </span>
           </button>
           <div className="flex items-center">
             <img

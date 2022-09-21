@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styles from "./HomeOptions.module.css";
 import clsx from "clsx";
 import offlineStatus from "../../../../assets/icons/friend-status-offline.png";
