@@ -1,5 +1,5 @@
 .container {
-  @apply max-w-[223px] w-full max-h-[178px] rounded-[10px] p-[103px_26px_24px_24px] xl:mb-[24px] mr-[10px];
+  @apply max-w-[223px] w-full max-h-[178px] rounded-[10px] p-[103px_26px_24px_24px] xl:mb-[24px] mr-[10px] xl:max-h-[137px] xl:p-[62px_78px_24px_24px];
   background: radial-gradient(
     128.88% 128.88% at 103.9% -10.39%,
     #e84d70 0%,
@@ -41,5 +41,5 @@
 }
 
 .container-content {
-  @apply w-full  justify-center flex;
+  @apply w-full  justify-center flex xl:flex-col xl:justify-center;
 }

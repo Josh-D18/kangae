@@ -13,26 +13,27 @@ const Home = () => {
       <div className={styles["home-content-container"]}>
         <Header />
         <HomeOptions />
-        <SortBy />
-
-        {/* Tablet Size And Up */}
-        <div className="flex flex-row-reverse">
-          <div className={styles["idea-container"]}>
-            {ideas.length > 0 ? (
-              ideas.map((idea) => (
-                <div key={idea.id}>
-                  <Idea
-                    idea={idea.idea}
-                    category={idea.category}
-                    id={idea.id}
-                    description={idea.description}
-                    likes={idea.likes}
-                  />
-                </div>
-              ))
-            ) : (
-              <NotFound />
-            )}
+        <div className="xl:mt-[94px]">
+          <SortBy />
+          {/* Tablet Size And Up */}
+          <div className="flex flex-row-reverse">
+            <div className={styles["idea-container"]}>
+              {ideas.length > 0 ? (
+                ideas.map(({ id, idea, category, description, likes }) => (
+                  <div key={id}>
+                    <Idea
+                      idea={idea}
+                      category={category}
+                      id={id}
+                      description={description}
+                      likes={likes}
+                    />
+                  </div>
+                ))
+              ) : (
+                <NotFound />
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import requestStatus from "../../../../assets/icons/friend-status-requests.png";
 
 const HomeOptions = () => {
   return (
-    <div className="sm:hidden md:block mt-[56px] mb-[40px] mr-[10px] ml-[39px]">
+    <div className="sm:hidden md:block mt-[56px] mb-[40px] mr-[10px] ml-[39px] xl:mt-[94px] xl:ml-0">
       <div className={styles["container-content"]}>
         <div className={clsx("p-[103px_26px_24px_24px]", styles["container"])}>
           <div>

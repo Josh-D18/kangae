@@ -3,5 +3,5 @@
 }
 
 .container {
-  @apply flex items-center justify-around bg-tertiary-200  max-h-[56px] w-full h-full md:max-w-[689px] md:m-auto md:rounded-[10px] md:max-h-[72px] xl:max-w-[825px];
+  @apply flex items-center justify-around bg-tertiary-200  h-[56px] w-full  md:max-w-[689px] md:m-auto md:rounded-[10px] md:h-[72px] xl:max-w-[825px];
 }

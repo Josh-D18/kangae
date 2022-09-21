@@ -15,6 +15,7 @@
 }
 
 .home-content-container {
+  @apply xl:flex xl:justify-center;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
