@@ -5,13 +5,14 @@ import { ideas } from "../../data/ideas";
 import Header from "../Header/Header";
 import SortBy from "./ui/SortBy/SortBy";
 import NotFound from "./ui/NotFound/NotFound";
+import HomeOptions from "./ui/HomeOptions";
 
 const Home = () => {
   return (
     <div className={styles["container"]}>
       <div className={styles["home-content-container"]}>
         <Header />
-
+        <HomeOptions />
         <SortBy />
 
         {/* Tablet Size And Up */}

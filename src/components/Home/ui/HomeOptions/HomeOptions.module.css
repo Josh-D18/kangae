@@ -1,0 +1,45 @@
+.container {
+  @apply max-w-[223px] w-full max-h-[178px] rounded-[10px] p-[103px_26px_24px_24px] xl:mb-[24px] mr-[10px];
+  background: radial-gradient(
+    128.88% 128.88% at 103.9% -10.39%,
+    #e84d70 0%,
+    #a337f6 53.09%,
+    #28a7ed 100%
+  );
+}
+
+.title {
+  @apply font-primary font-[700] leading-[29px] text-[20px] tracking-[-0.25px] text-primary-200 not-italic;
+}
+
+.user {
+  @apply font-[500] text-[15px] leading-[22px] opacity-[0.75] text-primary-200 not-italic;
+}
+
+.options-container {
+  @apply bg-primary-200 w-[223px] max-h-[178px] h-auto rounded-[10px] flex flex-wrap p-[24px_24px] xl:mb-[24px] mr-[10px];
+}
+
+.category-item {
+  @apply not-italic font-[600] text-[13px] leading-[19px] active:text-primary-200 text-primary-400 max-w-[111px] max-h-[30px] bg-primary-300 w-auto h-full flex items-center justify-center rounded-[10px] active:bg-primary-400 mb-[14px] mr-[8px] p-[5px_16px];
+}
+
+.my-profile-title {
+  @apply font-[700] not-italic text-[18px] leading-[26px] tracking-[-0.25px] text-secondary-300;
+}
+
+.my-profile-friend-status {
+  @apply flex  items-center not-italic text-[16px] leading-[23px] text-secondary-200 font-[400];
+}
+
+.my-profile-view {
+  @apply font-[600] leading-[19px] text-[13px] underline text-primary-400;
+}
+
+.my-profile-friend-status-number {
+  @apply font-[700] text-[16px] leading-[23px] text-right not-italic text-secondary-200;
+}
+
+.container-content {
+  @apply w-full  justify-center flex;
+}
