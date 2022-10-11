@@ -47,6 +47,7 @@ const FriendsList = () => {
           </p>
           {friends.map(({ id, username, online, friendBio, numberOfIdeas }) => (
             <FriendItem
+              key={id}
               id={id}
               username={username}
               online={online}
