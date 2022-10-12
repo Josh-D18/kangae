@@ -27,12 +27,16 @@
 }
 
 .friends-container {
-  @apply w-full h-[59px] bg-tertiary-300 flex justify-around items-center;
+  @apply w-full h-[59px] bg-tertiary-300 flex justify-around items-center md:hidden;
   border-bottom: 1px solid #8c92b3;
 }
 
+.line {
+  @apply w-[125px] h-[4px] absolute top-[154px];
+}
+
 .friend-status-container {
-  @apply h-[49px] mx-[24px] mt-auto mb-[24px] pt-[24px];
+  @apply mx-[24px] mt-auto mb-[180px] pt-[24px];
 }
 
 .friend-title {
