@@ -1,9 +1,9 @@
 .container {
-  @apply w-full h-[100px] bg-tertiary-200 flex justify-between;
+  @apply w-full h-[100px] bg-tertiary-200 flex justify-between md:w-[689px] md:h-[113px] md:rounded-[10px]  md:mx-auto xl:w-[1110px] lg:w-[740px];
 }
 
 .button {
-  @apply bg-primary-600 rounded-[10px]  text-tertiary-100 leading-[19px] text-[13px] font-[700] not-italic flex items-center w-[134px] h-[40px] my-[30px] mx-[24px] justify-center;
+  @apply bg-primary-600 rounded-[10px]  text-tertiary-100 leading-[19px] text-[13px] font-[700] not-italic flex items-center w-[134px] h-[40px] my-[30px] mx-[24px] justify-center md:mt-[35px] md:mb-[34px] hover:brightness-125;
 }
 
 .back-arrow {
@@ -27,18 +27,31 @@
 }
 
 .friends-container {
-  @apply w-full h-[59px] bg-tertiary-300 flex justify-around items-center;
+  @apply w-full h-[59px] bg-tertiary-300 flex justify-around items-center md:hidden;
   border-bottom: 1px solid #8c92b3;
 }
 
+.line {
+  @apply w-[125px] h-[4px] absolute top-[154px];
+}
+
 .friend-status-container {
-  @apply h-[49px] mx-[24px] mt-auto mb-[24px] pt-[24px];
+  @apply mx-[24px] mt-auto mb-[180px] pt-[24px] md:mx-[5px] lg:mx-[15px];
 }
 
 .friend-title {
-  @apply text-secondary-300 not-italic leading-[26px] text-[18px] tracking-[-0.25px] font-[700];
+  @apply text-secondary-300 not-italic leading-[26px] text-[18px] tracking-[-0.25px] font-[700] md:mb-[4px];
 }
 
 .friend-description {
-  @apply mb-[24px] leading-[19px] text-[13px] not-italic font-[400] text-secondary-200;
+  @apply mb-[24px] leading-[19px] text-[13px] not-italic font-[400] text-secondary-200 lg:text-[16px];
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.friend-list-container {
+  @apply flex justify-center h-screen overflow-y-auto bg-tertiary-300;
+  -ms-overflow-style: none;
 }
