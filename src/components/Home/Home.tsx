@@ -2,7 +2,7 @@ import Idea from "./ui/Idea/Idea";
 import styles from "./Home.module.css";
 
 import { ideas } from "../../data/ideas";
-import Header from "../Header/Header";
+import Header from "../Header";
 import SortBy from "./ui/SortBy/SortBy";
 import NotFound from "./ui/NotFound/NotFound";
 import HomeOptions from "./ui/HomeOptions";
