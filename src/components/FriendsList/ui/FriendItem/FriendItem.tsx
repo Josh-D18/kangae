@@ -40,7 +40,7 @@ const FriendItem = (props: IFriendItem) => {
       <div className="px-[24px] pb-[24px]">
         <div className={styles["friend-name"]}>@{username}</div>
         <div className={styles["friend-description"]}>{friendBio}</div>
-        <div className="flex justify-between mt-[30px]">
+        <div className="flex justify-between mt-[30px] md:mt-[10px] xl:mt-[20px] md:mb-[5px]">
           <button className={styles["numberOfFriends"]}>
             # Of Ideas:
             <span className={styles["numberOfFriends-number"]}>

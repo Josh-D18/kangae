@@ -18,21 +18,24 @@ const OfflineFriends = (props: IOfflineFriends) => {
         "md:block"
       )}
     >
-      <p className={styles["friend-title"]}>Offline</p>
-      <p className={styles["friend-description"]}>
-        Total Of Friends You Have Offline
-      </p>
-      {friends.map(({ id, username, online, friendBio, numberOfIdeas }) => (
-        <FriendItem
-          key={id}
-          id={id}
-          username={username}
-          online={online}
-          friendBio={friendBio}
-          numberOfIdeas={numberOfIdeas}
-          status={"offline"}
-        />
-      ))}
+      <div>
+        <p className={styles["friend-title"]}>Offline</p>
+        <p className={styles["friend-description"]}>
+          Total Of Friends You Have Offline
+        </p>
+
+        {friends.map(({ id, username, online, friendBio, numberOfIdeas }) => (
+          <FriendItem
+            key={id}
+            id={id}
+            username={username}
+            online={online}
+            friendBio={friendBio}
+            numberOfIdeas={numberOfIdeas}
+            status={"offline"}
+          />
+        ))}
+      </div>
     </div>
   );
 };

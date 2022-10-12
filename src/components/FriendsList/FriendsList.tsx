@@ -28,10 +28,10 @@ const FriendsList = () => {
   };
 
   return (
-    <div className="h-full">
+    <div className="h-full md:pt-[56px] bg-tertiary-300">
       <div className={styles.container}>
         <div className="flex flex-col py-[26px] px-[24px]">
-          <div className="flex items-center mb-[3px]">
+          <div className="flex items-center mb-[3px] md:pb-[4px]">
             <img
               src={backarrow}
               alt="back arrow"
@@ -94,7 +94,7 @@ const FriendsList = () => {
           />
         </div>
       </div>
-      <div className="h-screen overflow-y-auto bg-tertiary-300">
+      <div className={styles["friend-list-container"]}>
         <OfflineFriends isOffline={isActive.offline} />
         <OnlineFriends isOnline={isActive.online} />
         <FriendRequests requests={isActive.requests} />
