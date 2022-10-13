@@ -1,0 +1,7 @@
+.comments-container {
+  @apply bg-primary-200 rounded-[10px] my-[24px] w-[327px] mx-auto;
+}
+
+.comments-title {
+  @apply font-primary font-[700] text-[18px] leading-[26.01px] tracking-[-0.25px] text-secondary-300 py-[24px];
+}

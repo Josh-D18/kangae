@@ -1,0 +1,15 @@
+.comment-description {
+  @apply font-primary text-[13px] leading-[19px] font-[400] not-italic text-secondary-200 pt-[16px] pb-[24px];
+}
+
+.comment-reply-button {
+  @apply font-primary not-italic font-[400] text-[13px] leading-[19px] text-primary-500;
+}
+
+.comment-user-fullname {
+  @apply font-[700] text-[13px] leading-[19px] tracking-[-0.1805556px] text-secondary-300 not-italic font-primary;
+}
+
+.comment-username {
+  @apply font-[400] text-[13px] leading-[19px] not-italic font-primary text-secondary-200;
+}
