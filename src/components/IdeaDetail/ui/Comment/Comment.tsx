@@ -1,6 +1,8 @@
 import profileicon from "../../../../assets/icons/profile-icon.png";
 import styles from "./Comment.module.css";
 
+interface IComment {}
+
 const Comment = () => {
   return (
     <div>
