@@ -4,7 +4,7 @@ export const comments = [
     username: "user1",
     fullName: "Josh Date",
     online: true,
-    commment:
+    comment:
       "Also, please allow styles to be applied based on system preferences. I would love to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright background it currently has.",
     replies: [
       {
@@ -33,7 +33,7 @@ export const comments = [
     id: 3,
     username: "user3",
     online: true,
-    commment:
+    comment:
       "Also, please allow styles to be applied based on system preferences. I would love to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright background it currently has.",
     replies: [
       {
@@ -54,7 +54,7 @@ export const comments = [
     id: 4,
     username: "user4",
     online: true,
-    commment:
+    comment:
       "Also, please allow styles to be applied based on system preferences. I would love to be able to browse Frontend Mentor in the evening after my device’s dark mode turns on without the bright background it currently has.",
     replies: [
       {

@@ -1,5 +1,5 @@
 .comments-container {
-  @apply bg-primary-200 rounded-[10px] my-[24px] w-[327px] mx-auto;
+  @apply bg-primary-200 rounded-[10px] my-[24px] w-[327px] mx-auto max-h-[837px] h-full;
 }
 
 .comments-title {

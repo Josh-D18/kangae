@@ -36,7 +36,18 @@ const IdeaDetail = () => {
       <div className={styles["comments-container"]}>
         <div className="mx-[23px]">
           <h2 className={styles["comments-title"]}>4 Comments</h2>
-          <Comment />
+          <>
+            {comments.map(({ id, comment, fullName, username, replies }) => {
+              <Comment
+                key={id}
+                id={id}
+                comment={comment}
+                fullName={fullName}
+                username={username}
+                replies={replies}
+              />;
+            })}
+          </>
         </div>
       </div>
     </div>

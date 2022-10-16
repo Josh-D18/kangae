@@ -3,7 +3,7 @@
 }
 
 .comment-reply-button {
-  @apply font-primary not-italic font-[400] text-[13px] leading-[19px] text-primary-500;
+  @apply font-primary not-italic font-[400] text-[13px] leading-[19px] text-primary-500 ml-auto;
 }
 
 .comment-user-fullname {
@@ -12,4 +12,9 @@
 
 .comment-username {
   @apply font-[400] text-[13px] leading-[19px] not-italic font-primary text-secondary-200;
+}
+
+.line {
+  @apply border-b-[1px] opacity-25 w-[280px];
+  border-bottom: 2px solid #8c92b3;
 }
