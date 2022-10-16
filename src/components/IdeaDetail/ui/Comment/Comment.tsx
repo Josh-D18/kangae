@@ -6,7 +6,18 @@ interface IComment {
   comment: string | undefined;
   fullName: string | undefined;
   username: string;
-  replies: { username: string; fullname: string; comment: string }[];
+  replies:
+    | {
+        username: string;
+        fullName: string;
+        comment: string;
+      }[]
+    | {
+        username: string;
+        fullName: string;
+        comment: string;
+      }[]
+    | undefined;
 }
 
 const Comment = (props: IComment) => {
@@ -14,7 +25,7 @@ const Comment = (props: IComment) => {
 
   return (
     <div>
-      <div>
+      <div className="mb-[24px]">
         <div className="flex">
           <img
             src={profileicon}

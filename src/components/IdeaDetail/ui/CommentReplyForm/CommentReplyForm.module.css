@@ -1,0 +1,19 @@
+.comment-reply-form-container {
+  @apply bg-primary-200 rounded-[10px] mt-[24px] mb-[88px] mx-auto w-[327px] h-[234px];
+}
+
+.comment-form-title {
+  @apply font-primary not-italic font-[700] leading-[26px] tracking-[-0.25px] text-secondary-300 pb-[24px] text-[18px];
+}
+
+.comment-btn {
+  @apply bg-primary-600 rounded-[10px] w-[119px] h-[40px] font-primary text-[13px] leading-[19px] font-[700] text-primary-200 flex justify-center items-center;
+}
+
+.comment-characters-remaining {
+  @apply font-[400] text-[13px] not-italic leading-[19px] text-secondary-200 font-primary;
+}
+
+.comment-form-input {
+  @apply w-[279px] h-[80px] bg-secondary-400 rounded-[5px] pl-[16px] pb-[45px] pt-[16px] font-primary text-[13px] not-italic leading-[19px] text-secondary-500 focus:text-secondary-300;
+}

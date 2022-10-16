@@ -3,7 +3,7 @@
 }
 
 .comment-reply-button {
-  @apply font-primary not-italic font-[400] text-[13px] leading-[19px] text-primary-500 ml-auto;
+  @apply font-primary not-italic font-[600] text-[13px] leading-[19px] text-primary-500 ml-auto;
 }
 
 .comment-user-fullname {

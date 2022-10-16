@@ -4,10 +4,11 @@ import { ideas } from "../../data/ideas";
 import Idea from "./ui/Idea/Idea";
 import Comment from "./ui/Comment/Comment";
 import { comments } from "../../data/comments";
+import CommentReplyForm from "./ui/CommentReplyForm";
 
 const IdeaDetail = () => {
   return (
-    <div className="h-full bg-tertiary-300">
+    <div className="h-full overflow-y-auto bg-tertiary-300">
       <div className="flex justify-between p-[24px]">
         <div className="flex items-center mb-[3px] md:pb-[4px]">
           <img
@@ -17,7 +18,7 @@ const IdeaDetail = () => {
           />
           <span className={styles["back-link-text"]}>Go Back</span>
         </div>
-        <button>Edit Idea</button>
+        <button className={styles["edit-btn"]}>Edit Idea</button>
       </div>
       <div className="idea-container">
         {[ideas[0]].map(({ id, idea, category, description, likes }) => (
@@ -37,7 +38,7 @@ const IdeaDetail = () => {
         <div className="mx-[23px]">
           <h2 className={styles["comments-title"]}>4 Comments</h2>
           <>
-            {comments.map(({ id, comment, fullName, username, replies }) => {
+            {comments.map(({ id, comment, fullName, username, replies }) => (
               <Comment
                 key={id}
                 id={id}
@@ -45,11 +46,13 @@ const IdeaDetail = () => {
                 fullName={fullName}
                 username={username}
                 replies={replies}
-              />;
-            })}
+              />
+            ))}
           </>
         </div>
       </div>
+
+      <CommentReplyForm />
     </div>
   );
 };
