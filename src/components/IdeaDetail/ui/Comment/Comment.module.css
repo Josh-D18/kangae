@@ -1,5 +1,5 @@
 .comment-description {
-  @apply font-primary text-[13px] leading-[19px] font-[400] not-italic text-secondary-200 pt-[16px] pb-[24px];
+  @apply font-primary text-[13px] leading-[19px] font-[400] not-italic text-secondary-200 pt-[16px] pb-[24px] w-[256px];
 }
 
 .comment-reply-button {
@@ -7,14 +7,23 @@
 }
 
 .comment-user-fullname {
-  @apply font-[700] text-[13px] leading-[19px] tracking-[-0.1805556px] text-secondary-300 not-italic font-primary;
+  @apply font-[700] text-[13px] leading-[19px] tracking-[-0.1805556px] text-secondary-300 not-italic font-primary w-[90px];
 }
 
 .comment-username {
-  @apply font-[400] text-[13px] leading-[19px] not-italic font-primary text-secondary-200;
+  @apply font-[400] text-[13px] leading-[19px] not-italic font-primary text-secondary-200 w-[71px];
 }
 
 .line {
-  @apply border-b-[1px] opacity-25 w-[280px];
-  border-bottom: 2px solid #8c92b3;
+  @apply opacity-25 w-[280px];
+  border-bottom: 1px solid #8c92b3;
+}
+
+.line-reply {
+  @apply h-[280px] bottom-[281px] opacity-25;
+  border-left: 1px solid #8c92b3;
+}
+
+.comment-replies {
+  height: 100%;
 }
