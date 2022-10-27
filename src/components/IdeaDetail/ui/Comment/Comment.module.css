@@ -1,5 +1,5 @@
 .comment-description {
-  @apply font-primary text-[13px] leading-[19px] font-[400] not-italic text-secondary-200 pt-[16px] pb-[24px] w-[256px];
+  @apply font-primary text-[13px] leading-[19px] font-[400] not-italic text-secondary-200 pt-[16px] pb-[24px] w-[256px] md:w-[553px] md:text-[15px] md:leading-[22px];
 }
 
 .comment-reply-button {
@@ -15,7 +15,7 @@
 }
 
 .line {
-  @apply opacity-25 w-[280px];
+  @apply opacity-25 w-[280px] md:w-[625px] px-[32px];
   border-bottom: 1px solid #8c92b3;
 }
 

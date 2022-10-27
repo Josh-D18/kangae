@@ -1,5 +1,7 @@
 import profileicon from "../../../../assets/icons/profile-icon.png";
 import styles from "./Comment.module.css";
+import clsx from "clsx";
+import { useState } from "react";
 
 interface IComment {
   id: number;
@@ -25,9 +27,15 @@ interface IComment {
 const Comment = (props: IComment) => {
   const { id, comment, fullName, username, replies } = props;
 
+  const [activeReplyComment, setActiveReplyComment] = useState<boolean>();
+
+  const handleClick = () => {
+    setActiveReplyComment(!activeReplyComment);
+  };
+
   return (
     <div>
-      <div className="mb-[24px]">
+      <div className={clsx("mb-[24px]")} onClick={handleClick}>
         <div className="flex">
           <img
             src={profileicon}
@@ -42,13 +50,13 @@ const Comment = (props: IComment) => {
           <button className={styles["comment-reply-button"]}>Reply</button>
         </div>
         <p className={styles["comment-description"]}>{comment}</p>
-        <div className={styles["line"]} />
+        <div className={clsx(!activeReplyComment && styles["line"])} />
       </div>
       <div className={styles["comment-replies"]}>
-        <div className={styles["line-reply"]} />
-        <div className="relative bottom-[281px]">
+        <div className={clsx(!activeReplyComment && "hidden")}>
           {replies?.map(({ id, username, fullName, comment }) => (
             <div key={id}>
+              {/* <div className={styles["line-reply"]} /> */}
               <div className="ml-[23px] mr-[24px]">
                 <div className="flex">
                   <img
