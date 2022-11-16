@@ -9,7 +9,7 @@ import CommentReplyForm from "./ui/CommentReplyForm";
 const IdeaDetail = () => {
   return (
     <div className="h-full overflow-y-auto bg-tertiary-300">
-      <div className="flex justify-between p-[24px]">
+      <div className="flex justify-between p-[24px] md:px-[40px] md:pt-[56px] lg:pt-[80px]">
         <div className="flex items-center mb-[3px] md:pb-[4px]">
           <img
             src={backarrow}

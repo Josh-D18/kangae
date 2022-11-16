@@ -24,6 +24,11 @@
   border-left: 1px solid #8c92b3;
 }
 
-.comment-replies {
-  height: 100%;
+.comment-reply-container:first-child {
+  border-left: 1px solid #8c92b3;
+}
+@media (min-width: 789px) {
+  .comment-reply-container:first-child {
+    border-left: 0px solid #8c92b3;
+  }
 }
