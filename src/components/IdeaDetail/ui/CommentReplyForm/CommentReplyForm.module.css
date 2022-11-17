@@ -1,5 +1,5 @@
 .comment-reply-form-container {
-  @apply bg-primary-200 rounded-[10px] mt-[24px] mb-[88px] mx-auto w-[327px] h-[234px];
+  @apply bg-primary-200 rounded-[10px] mt-[24px] mb-[88px] mx-auto w-[327px] h-[234px] md:w-[689px] xl:w-[730px];
 }
 
 .comment-form-title {
@@ -15,5 +15,5 @@
 }
 
 .comment-form-input {
-  @apply w-[279px] h-[80px] bg-secondary-400 rounded-[5px] pl-[16px] pb-[45px] pt-[16px] font-primary text-[13px] not-italic leading-[19px] text-secondary-500 focus:text-secondary-300;
+  @apply w-[279px] h-[80px] bg-secondary-400 rounded-[5px] pl-[16px] pb-[45px] pt-[16px] font-primary text-[13px] not-italic leading-[19px] text-secondary-500 focus:text-secondary-300 md:w-[623px] xl:w-[664px];
 }

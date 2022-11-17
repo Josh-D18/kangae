@@ -11,7 +11,7 @@
 }
 
 .idea-description {
-  @apply mb-[30px] font-[400] not-italic leading-[19px] text-[13px] text-secondary-200 md:text-[16px] md:leading-[23.12px] font-primary max-w-[374px] md:mb-[25px];
+  @apply mb-[30px] font-[400] not-italic leading-[19px] text-[13px] text-secondary-200 md:text-[16px] md:leading-[23.12px] font-primary max-w-[374px] md:mb-[25px] xl:max-w-[600px] xl:w-full;
 }
 
 .idea-category {

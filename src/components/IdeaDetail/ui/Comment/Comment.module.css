@@ -20,14 +20,15 @@
 }
 
 .line-reply {
-  @apply h-[280px] bottom-[281px] opacity-25;
+  @apply h-[280px] bottom-[281px] opacity-25 block ml-[18px] mt-[15px];
   border-left: 1px solid #8c92b3;
+  height: 100%;
 }
 
 .comment-reply-container:first-child {
   border-left: 1px solid #8c92b3;
 }
-@media (min-width: 789px) {
+@media (min-width: 768px) {
   .comment-reply-container:first-child {
     border-left: 0px solid #8c92b3;
   }

@@ -3,7 +3,7 @@ import styles from "./CommentReplyForm.module.css";
 const CommentReplyForm = () => {
   return (
     <div className={styles["comment-reply-form-container"]}>
-      <div className="px-[24px] pt-[24px] pb-[24px]">
+      <div className="px-[24px] pt-[24px] pb-[24px] md:px-[32px]">
         <h3 className={styles["comment-form-title"]}>Add Comment</h3>
 
         <form>

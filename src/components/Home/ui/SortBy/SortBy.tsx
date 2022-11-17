@@ -2,6 +2,7 @@ import { ReactComponent as Dropdown } from "../../../../assets/icons/white-dropd
 import styles from "./SortBy.module.css";
 import plusicon from "../../../../assets/icons/plus-icon.png";
 import { ReactComponent as Ideaicon } from "../../../../assets/icons/idea-lightblub.svg";
+import { Link } from "react-router-dom";
 
 const SortBy = () => {
   return (
@@ -21,7 +22,7 @@ const SortBy = () => {
         </p>
         <Dropdown className="max-w-[8px] max-h-[6px]" />
       </div>
-      <div>
+      <Link to={"/create-idea"}>
         <button className={styles["button"]}>
           <img
             src={plusicon}
@@ -30,7 +31,7 @@ const SortBy = () => {
           />
           <span className="pl-[11px]">Add Idea</span>
         </button>
-      </div>
+      </Link>
     </div>
   );
 };

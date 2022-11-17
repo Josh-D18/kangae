@@ -51,7 +51,7 @@ const Idea = (props: IIdea) => {
         <div className="sm:hidden md:block">
           <div
             className={clsx(
-              "md:mt-[34px] xl:ml-[263px]",
+              "md:mt-[34px] xl:ml-[50px]",
               styles["idea-comments"]
             )}
           >

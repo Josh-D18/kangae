@@ -37,11 +37,19 @@ const Comment = (props: IComment) => {
     <div>
       <div className={clsx("mb-[24px]")} onClick={handleClick}>
         <div className="flex">
-          <img
-            src={profileicon}
-            alt="profile"
-            className="max-w-[40px] max-h-[40px] md:mr-[32px]"
-          />
+          <div>
+            <img
+              src={profileicon}
+              alt="profile"
+              className="max-w-[40px] max-h-[40px] md:mr-[32px]"
+            />
+            <div
+              className={clsx(
+                activeReplyComment && styles["line-reply"],
+                "sm:hidden md:block"
+              )}
+            />
+          </div>
           <div className="ml-[16px] mr-[80px] md:ml-0">
             <div className="flex">
               <div>
@@ -85,7 +93,7 @@ const Comment = (props: IComment) => {
         <div className={clsx(!activeReplyComment && "hidden")}>
           {replies?.map(({ id, username, fullName, comment }) => (
             <div key={id} className={styles["comment-reply-container"]}>
-              <div className={"ml-[23px] mr-[24px] md:ml-[24px]"}>
+              <div className={"ml-[23px] mr-[24px] md:ml-[48px]"}>
                 <div className="flex">
                   <img
                     src={profileicon}

@@ -4,6 +4,7 @@ import styles from "./CreateIdea.module.css";
 import backArrow from "../../assets/icons/back-arrow.png";
 import circleButton from "../../assets/icons/plus-circle-button.png";
 import plusIcon from "../../assets/icons/plus-icon.png";
+import { useNavigate } from "react-router-dom";
 
 enum CategoryEnum {
   Healthcare = "Healthcare",
@@ -42,11 +43,12 @@ interface IFormInput {
 const CreateIdea = () => {
   const { register, handleSubmit } = useForm<IFormInput>();
   const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+  const navigate = useNavigate();
 
   return (
     <div className="w-full h-full overflow-y-auto bg-tertiary-300">
       <div className="">
-        <div className={styles["back-button"]}>
+        <div className={styles["back-button"]} onClick={() => navigate(-1)}>
           <img
             src={backArrow}
             alt="arrow"
@@ -162,7 +164,7 @@ const CreateIdea = () => {
                 id="description"
               />
             </div>
-            <div className=" md:flex md:flex-row-reverse md:items-center md:ml-[289px] lg:ml-[250px]">
+            <div className="md:flex md:flex-row-reverse md:items-center md:ml-[289px] lg:ml-[250px]">
               <button type="submit" className={styles["button"]}>
                 Create
               </button>
