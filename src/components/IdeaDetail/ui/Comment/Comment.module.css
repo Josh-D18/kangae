@@ -20,7 +20,7 @@
 }
 
 .line-reply {
-  @apply h-[280px] bottom-[281px] opacity-25 block ml-[18px] mt-[15px];
+  @apply h-[280px] bottom-[281px] opacity-25 ml-[18px] mt-[15px];
   border-left: 1px solid #8c92b3;
   height: 100%;
 }

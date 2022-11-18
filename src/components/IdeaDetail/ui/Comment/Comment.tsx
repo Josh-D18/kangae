@@ -46,8 +46,8 @@ const Comment = (props: IComment) => {
             />
             <div
               className={clsx(
-                activeReplyComment && styles["line-reply"],
-                "sm:hidden md:block"
+                "sm:hidden md:block",
+                activeReplyComment && styles["line-reply"]
               )}
             />
           </div>
