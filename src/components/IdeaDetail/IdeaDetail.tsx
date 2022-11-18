@@ -6,7 +6,7 @@ import Comment from "./ui/Comment/Comment";
 import { comments } from "../../data/comments";
 import CommentReplyForm from "./ui/CommentReplyForm";
 import clsx from "clsx";
-import { useNavigate, Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 type IdeaParams = {
   id: string | undefined | any;
@@ -15,7 +15,7 @@ type IdeaParams = {
 const IdeaDetail = () => {
   const navigate = useNavigate();
   const { id } = useParams<IdeaParams>();
-  console.log(ideas[id], id);
+
   return (
     <div className="h-full overflow-y-auto bg-tertiary-300">
       <div className={clsx(styles["idea-container"])}>

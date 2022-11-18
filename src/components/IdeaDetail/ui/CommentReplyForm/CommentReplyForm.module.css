@@ -17,3 +17,15 @@
 .comment-form-input {
   @apply w-[279px] h-[80px] bg-secondary-400 rounded-[5px] pl-[16px] pb-[45px] pt-[16px] font-primary text-[13px] not-italic leading-[19px] text-secondary-500 focus:text-secondary-300 md:w-[623px] xl:w-[664px];
 }
+
+/* Mini Reply */
+.reply-comment-container {
+}
+
+.reply-comment-form-container {
+  @apply flex;
+}
+
+.comment-form-input {
+  @apply w-[279px] h-[80px] bg-secondary-400 rounded-[5px] pl-[16px] pb-[45px] pt-[16px] font-primary text-[13px] not-italic leading-[19px] text-secondary-500 focus:text-secondary-300 md:w-[623px] xl:w-[416px];
+}

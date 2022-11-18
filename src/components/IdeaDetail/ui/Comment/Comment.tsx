@@ -2,6 +2,7 @@ import profileicon from "../../../../assets/icons/profile-icon.png";
 import styles from "./Comment.module.css";
 import clsx from "clsx";
 import { useState } from "react";
+import ReplyForm from "../CommentReplyForm/ReplyForm";
 
 interface IComment {
   id: number;
@@ -25,7 +26,7 @@ interface IComment {
 }
 
 const Comment = (props: IComment) => {
-  const { id, comment, fullName, username, replies } = props;
+  const { comment, fullName, username, replies } = props;
 
   const [activeReplyComment, setActiveReplyComment] = useState<boolean>();
 
@@ -121,6 +122,7 @@ const Comment = (props: IComment) => {
               </div>
             </div>
           ))}
+          <ReplyForm />
         </div>
       </div>
     </div>
