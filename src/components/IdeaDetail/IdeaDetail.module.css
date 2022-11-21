@@ -1,0 +1,15 @@
+.comments-container {
+  @apply bg-primary-200 rounded-[10px] my-[24px] w-[327px] mx-auto mb-[24px] pb-[24px] md:w-[689px] xl:w-[730px];
+}
+
+.comments-title {
+  @apply font-primary font-[700] text-[18px] leading-[26.01px] tracking-[-0.25px] text-secondary-300 pt-[24px];
+}
+
+.edit-btn {
+  @apply bg-primary-400 rounded-[10px] w-[119px] h-[40px] font-primary text-[13px] leading-[19px] font-[700] text-primary-200 flex justify-center items-center md:ml-[31rem] xl:ml-[39rem];
+}
+
+.back-link-text {
+  @apply leading-[19px] text-[13px] font-[700] font-primary not-italic text-secondary-200 pl-[15.67px];
+}

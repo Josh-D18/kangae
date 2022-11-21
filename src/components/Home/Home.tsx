@@ -6,6 +6,7 @@ import Header from "../Header";
 import SortBy from "./ui/SortBy/SortBy";
 import NotFound from "./ui/NotFound/NotFound";
 import HomeOptions from "./ui/HomeOptions";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -19,17 +20,21 @@ const Home = () => {
           <div className="flex flex-row-reverse">
             <div className={styles["idea-container"]}>
               {ideas.length > 0 ? (
-                ideas.map(({ id, idea, category, description, likes }) => (
-                  <div key={id}>
-                    <Idea
-                      idea={idea}
-                      category={category}
-                      id={id}
-                      description={description}
-                      likes={likes}
-                    />
-                  </div>
-                ))
+                ideas.map(
+                  ({ id, idea, category, description, likes }, index) => (
+                    <div key={id}>
+                      <Link to={`idea-detail/${index}`} key={id}>
+                        <Idea
+                          idea={idea}
+                          category={category}
+                          id={id}
+                          description={description}
+                          likes={likes}
+                        />
+                      </Link>
+                    </div>
+                  )
+                )
               ) : (
                 <NotFound />
               )}

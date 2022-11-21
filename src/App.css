@@ -20,7 +20,7 @@
 }
 
 .site-container {
-  @apply w-auto h-full overflow-y-hidden md:bg-secondary-200;
+  @apply w-auto h-full overflow-y-hidden;
 }
 
 .site-container::-webkit-scrollbar {

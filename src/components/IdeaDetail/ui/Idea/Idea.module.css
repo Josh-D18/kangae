@@ -1,0 +1,31 @@
+.container {
+  @apply max-w-[327px] w-full flex flex-col m-auto mb-[55px] mt-[32px] h-full md:max-w-[689px] xl:max-w-[825px];
+}
+
+.content-container {
+  @apply bg-primary-200 rounded-[10px] p-[24px_24px] md:flex md:justify-around md:items-start xl:justify-start;
+}
+
+.idea-title {
+  @apply not-italic font-[700] text-[13px] leading-[18.79px] tracking-[-0.180556px] text-secondary-300 mb-[9px] md:text-[18px] md:tracking-[-0.025px] md:leading-[26.01px] md:mb-[4px] font-primary;
+}
+
+.idea-description {
+  @apply mb-[30px] font-[400] not-italic leading-[19px] text-[13px] text-secondary-200 md:text-[16px] md:leading-[23.12px] font-primary max-w-[374px] md:mb-[25px] xl:max-w-[600px] xl:w-full;
+}
+
+.idea-category {
+  @apply mb-[16px] bg-primary-300 max-w-[111px]  rounded-[10px] h-[30px] flex items-center justify-center text-primary-400 font-[600] text-[13px] leading-[19px] font-primary;
+}
+
+.idea-likes {
+  @apply rounded-[10px] flex items-center justify-center bg-primary-300 max-w-[69px] h-[32px] w-full md:h-[53px] md:w-[40px] md:flex md:flex-col font-primary;
+}
+
+.idea-number-text {
+  @apply text-secondary-300 leading-[19px] tracking-[-0.180556px] font-[700] text-[13px] ml-[10px] md:ml-[0] md:tracking-[-0.22px] md:leading-[23.12px] md:text-[16px] font-primary;
+}
+
+.idea-comments {
+  @apply flex items-center;
+}
