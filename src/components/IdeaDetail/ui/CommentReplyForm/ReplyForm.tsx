@@ -3,12 +3,12 @@ import styles from "./CommentReplyForm.module.css";
 
 const ReplyForm = () => {
   return (
-    <div className={styles["reply-comment-container"]}>
-      <div className="px-[24px] pt-[24px] pb-[24px] md:px-[32px]">
+    <div>
+      <div>
         <form className={styles["reply-comment-form-container"]}>
           <input
             placeholder="Type your comment here"
-            className={styles["comment-form-input"]}
+            className={styles["comment-form-input-reply"]}
           />
           <div className="pb-[16px] flex items-center justify-between">
             <button className={clsx(styles["comment-btn"], "pt-0")}>

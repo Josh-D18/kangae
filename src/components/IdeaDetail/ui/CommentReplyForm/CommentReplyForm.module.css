@@ -19,13 +19,10 @@
 }
 
 /* Mini Reply */
-.reply-comment-container {
-}
-
 .reply-comment-form-container {
-  @apply flex;
+  @apply flex flex-col md:flex-row md:items-start;
 }
 
-.comment-form-input {
-  @apply w-[279px] h-[80px] bg-secondary-400 rounded-[5px] pl-[16px] pb-[45px] pt-[16px] font-primary text-[13px] not-italic leading-[19px] text-secondary-500 focus:text-secondary-300 md:w-[623px] xl:w-[416px];
+.comment-form-input-reply {
+  @apply w-full h-[80px] bg-secondary-400 rounded-[5px] pl-[16px] pb-[45px] pt-[16px] font-primary text-[13px] not-italic leading-[19px] text-secondary-500 focus:text-secondary-300 mb-[16px] md:mr-[16px];
 }

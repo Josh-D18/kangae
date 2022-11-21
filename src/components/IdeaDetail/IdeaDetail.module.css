@@ -3,7 +3,7 @@
 }
 
 .comments-title {
-  @apply font-primary font-[700] text-[18px] leading-[26.01px] tracking-[-0.25px] text-secondary-300 py-[24px];
+  @apply font-primary font-[700] text-[18px] leading-[26.01px] tracking-[-0.25px] text-secondary-300 pt-[24px];
 }
 
 .edit-btn {
